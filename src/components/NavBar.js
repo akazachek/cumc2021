@@ -35,9 +35,9 @@ class NavBar extends Component {
               click={this.handleClick}
             ></NavItem>
            <NavItem
-              item="keynotes"
-              text="Keynote Speakers"
-              tolink="/keynotes"
+              item="speakers"
+              text="Lectures and Panels"
+              tolink="/speakers"
               click={this.handleClick}
             ></NavItem>
             <NavItem

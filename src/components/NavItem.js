@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 class NavItem extends Component {
-
   render() {
     return (
       <li id={this.props.item}>
@@ -16,7 +15,6 @@ class NavItem extends Component {
       </li>
     );
   }
-
 }
 
 export default NavItem;

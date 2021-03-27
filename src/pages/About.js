@@ -1,14 +1,28 @@
 import React, { Component } from "react";
+import Translator from "../components/Translator";
+
+import mc from "../media/mc.jpg";
+import booklet from "../media/assign4.pdf";
 
 class About extends Component {
-
   render() {
     return (
-      <div className="coDiv">
-        <div className="about" id="aboutSec">
-          <p>
-            about
-          </p>
+      <div className = "centrefold">
+        <div className = "tableHoriz centreVert">
+          <img src={mc} className = "roundedImg" />
+          <div>
+            <p style={{textAlign: "left"}}>
+              <Translator page = "about" text = "conferenceOverview" />
+            </p>
+            <p style={{textAlign: "left"}}>
+              <Translator page = "about" text = "conferenceDetails" />
+            </p>
+          </div>
+        </div>
+        <div id = "bookletLink">
+          <a href={booklet} className = "noStyle" >
+            <Translator page = "about" text = "conferenceBooklet" />
+          </a>
         </div>
       </div>
     );

@@ -2,9 +2,7 @@
   text-align: center;
 }
 
-.fullWidth {
-  width: 100%;
-}
+/* NavBar */
 
 .navBar ul li {
   display: inline-block;
@@ -20,9 +18,88 @@
   color: red;
 }
 
+/* EventBar */
+
+.eventBar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.eventBar ul li {
+  padding: 1vh;
+  list-style: none;
+  text-align: left;
+}
+
+.eventActive {
+  color: red;
+}
+
+/* floating stuff */
+
 .localeSwitch {
   position: fixed;
   right: 0;
   bottom: 0;
+  margin: 1vw;
+}
+
+/* generic classes */
+
+.fullWidth {
+  width: 100%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.centreVert {
+  align-items: center;
+}
+
+.centrefold {
+  width: 60%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2vh;
+}
+
+.tableHoriz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tableVert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roundedImg {
+  border-radius: 7%;
+  height: auto;
+  width: 20vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.noStyle {
+  text-decoration: none;
+  color: red; /* inherit */
+}
+
+/* keynotes */
+
+.speaker {
+  padding: 1vw;
+}
+
+/* ids */
+
+#bookletLink {
   margin: 1vw;
 }

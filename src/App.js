@@ -10,7 +10,7 @@ import React, { Component } from "react";
 
 /* pages in site */
 import About from './pages/About';
-import Keynotes from './pages/Keynotes';
+import Speakers from './pages/Speakers';
 import Students from './pages/Students';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
@@ -52,13 +52,9 @@ class App extends Component {
             </header>
             <body>
               <LocaleContext.Provider value = {this.state.locale}>
-                <p>
-                  Super cool conference stuff.
-                  {this.state.locale}
-                </p>
                 <Switch>
                     <Route path = "/about" component={About} />
-                    <Route path = "/keynotes" component={Keynotes} />
+                    <Route path = "/speakers" component={Speakers} />
                     <Route path = "/students" component={Students} />
                     <Route path = "/faq" component={FAQ} />
                     <Route path = "/contact" component={Contact} />

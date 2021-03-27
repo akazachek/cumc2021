@@ -4,7 +4,7 @@ class Students extends Component {
 
   render() {
     return (
-      <div className="coDiv">
+      <div className="centrefold">
         <div className="about" id="aboutSec">
           <p>
            students
