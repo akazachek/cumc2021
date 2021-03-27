@@ -1,27 +1,31 @@
 /* media */
 
-import header from './media/header.png';
-import './App.css';
+import header from "./media/header.png";
+import "./App.css";
 
 /* technical */
 
-import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from "react-router-dom";
 import React, { Component } from "react";
 
 /* pages in site */
-import About from './pages/About';
-import Speakers from './pages/Speakers';
-import Students from './pages/Students';
-import FAQ from './pages/FAQ';
-import Contact from './pages/Contact';
+import About from "./pages/About";
+import Speakers from "./pages/Speakers";
+import Students from "./pages/Students";
+import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
 
 /* components */
-import NavBar from './components/NavBar';
-import { LocaleContext } from './components/LocaleContext';
-import LocaleSwitch from './components/LocaleSwitch';
+import NavBar from "./components/NavBar";
+import { LocaleContext } from "./components/LocaleContext";
+import LocaleSwitch from "./components/LocaleSwitch";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -39,28 +43,31 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-            <header className="menu">
-              <div className="fullWidth">
-                <img src={header} className="header" alt="CUMC 2021" />
-                {/* load default homepage */}
-                <Route exact path="/">
-                  <Redirect to="/about"/>
-                </Route>
-                <NavBar/>
-                <LocaleSwitch locale = {this.state.locale} changeLocale = {this.changeLocale} />
-              </div>
-            </header>
-            <body>
-              <LocaleContext.Provider value = {this.state.locale}>
-                <Switch>
-                    <Route path = "/about" component={About} />
-                    <Route path = "/speakers" component={Speakers} />
-                    <Route path = "/students" component={Students} />
-                    <Route path = "/faq" component={FAQ} />
-                    <Route path = "/contact" component={Contact} />
-                </Switch>
-              </LocaleContext.Provider>
-            </body>
+          <header className="menu">
+            <div className="fullWidth">
+              <img src={header} className="header" alt="CUMC 2021" />
+              {/* load default homepage */}
+              <Route exact path="/">
+                <Redirect to="/about" />
+              </Route>
+              <NavBar />
+              <LocaleSwitch
+                locale={this.state.locale}
+                changeLocale={this.changeLocale}
+              />
+            </div>
+          </header>
+          <body>
+            <LocaleContext.Provider value={this.state.locale}>
+              <Switch>
+                <Route path="/about" component={About} />
+                <Route path="/speakers" component={Speakers} />
+                <Route path="/students" component={Students} />
+                <Route path="/faq" component={FAQ} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            </LocaleContext.Provider>
+          </body>
         </div>
       </Router>
     );

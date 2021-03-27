@@ -1,39 +1,39 @@
 import React, { Component } from "react";
-import Translator from "../components/Translator";
+import Translator from "../../components/Translator";
 
-import jake from "../media/jake.jpg";
-import madhu from "../media/madhu.jpg";
+import jeff from "../../media/jeff.jpg";
+import tim from "../../media/tim.jpg"
 
-class Keynotes extends Component {
+class Panel extends Component {
   render() {
     return (
       <div className = "centrefold">
         <div className = "tableVert">
           <div className = "tableHoriz centreVert speaker">
-            <img src={jake} className = "roundedImg" />
+            <img src={jeff} className = "roundedImg" />
             <div>
               <h2 style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "jakeInfo" />
+                <Translator page = "panel" text = "jeffInfo" />
               </h2>
               <h3 style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "jakeTalk" />
+                <Translator page = "panel" text = "jeffTalk" />
               </h3>
               <p style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "jakeAbstract" />
+                <Translator page = "panel" text = "jeffAbstract" />
               </p>
             </div>
           </div>
           <div className = "tableHoriz centreVert speaker">
-            <img src={madhu} className = "roundedImg" />
+            <img src={tim} className = "roundedImg" />
             <div>
               <h2 style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "madhuInfo" />
+                <Translator page = "panel" text = "timInfo" />
               </h2>
               <h3 style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "madhuTalk" />
+                <Translator page = "panel" text = "timTalk" />
               </h3>
               <p style={{textAlign: "left"}}>
-                <Translator page = "keynotes" text = "madhuAbstract" />
+                <Translator page = "panel" text = "timAbstract" />
               </p>
             </div>
           </div>
@@ -43,4 +43,4 @@ class Keynotes extends Component {
   }
 }
 
-export default Keynotes;
+export default Panel;

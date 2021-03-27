@@ -60,13 +60,6 @@
   align-items: center;
 }
 
-.centrefold {
-  width: 60%;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 2vh;
-}
-
 .tableHoriz {
   display: flex;
   flex-direction: row;
@@ -87,9 +80,17 @@
   padding-right: 1vw;
 }
 
+.alignLeft {
+  text-align: left;
+}
+
 .noStyle {
   text-decoration: none;
   color: red; /* inherit */
+}
+
+.noMargin {
+  margin: 0;
 }
 
 /* keynotes */
@@ -102,4 +103,22 @@
 
 #bookletLink {
   margin: 1vw;
+}
+
+/* misc */
+
+.centrefold {
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2vh;
+}
+
+.committeeMember {
+  margin-left: 3vw;
+}
+
+.committeeRow {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }

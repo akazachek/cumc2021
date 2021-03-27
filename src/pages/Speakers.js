@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 import EventBar from "../components/EventBar";
 
-import Keynotes from "./Keynotes";
-import Panel from "./Panel";
-import Workshop from "./Workshop";
+import Keynotes from "./Speakers/Keynotes";
+import Panel from "./Speakers/Panel";
+import Workshop from "./Speakers/Workshop";
 
 class Speakers extends Component {
   constructor(props) {

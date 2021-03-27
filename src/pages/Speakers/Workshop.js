@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Translator from "../components/Translator";
+import Translator from "../../components/Translator";
 
-import yashan from "../media/yashan.jpg";
+import yashan from "../../media/yashan.jpg";
 
 class Workshop extends Component {
   render() {

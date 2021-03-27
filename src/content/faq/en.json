@@ -1,0 +1,6 @@
+{
+    "attendQ": "I can't attend the whole conference. Should I still attend part of it?",
+    "attendA": "Yes! Attending part of the conference is still a valuable experience. Unfortunately, the registration fee is the same regardless of how many days of the conference you attend. ",
+    "talkQ": "I want to give a talk. What should I talk about?",
+    "talkA": "Talks can be on any topic in the mathematical sciences, including pure math, applied math, mathematical statistics, mathematical physics, etc. Your talk need not be based on a research project - it can also be an exposition of an interesting topic you learnt, or any problem you find interesting! You don't need to be an expert in the topic you're speaking about, as long as you fully understand the material you're presenting. If necessary, you can specify suggested background knowledge in your abstract. However, it is usually best to assume that your audience does not have all of the prerequisites."
+}

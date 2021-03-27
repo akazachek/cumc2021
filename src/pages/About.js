@@ -11,10 +11,10 @@ class About extends Component {
         <div className = "tableHoriz centreVert">
           <img src={mc} className = "roundedImg" />
           <div>
-            <p style={{textAlign: "left"}}>
+            <p className="alignLeft">
               <Translator page = "about" text = "conferenceOverview" />
             </p>
-            <p style={{textAlign: "left"}}>
+            <p className="alignLeft">
               <Translator page = "about" text = "conferenceDetails" />
             </p>
           </div>
