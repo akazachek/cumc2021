@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Translator from "../components/Translator";
+import Translator from "../components/locale/Translator";
 
 class Contact extends Component {
   render() {
@@ -64,7 +64,10 @@ class Contact extends Component {
         </div>
         <h3>
           <Translator page="contact" text="contact" />
-          <a href="mailto:cumc@uwo.ca">cumc@uwo.ca</a>.
+          <a className="noStyle colouredLink" href="mailto:cumc@uwo.ca">
+            cumc@uwo.ca
+          </a>
+          .
         </h3>
       </div>
     );

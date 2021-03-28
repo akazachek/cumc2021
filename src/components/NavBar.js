@@ -2,24 +2,17 @@ import React, { Component } from "react";
 import NavItem from "./NavItem";
 
 class NavBar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      navActiveItem: "about"
+      activeNav: "about"
     };
   }
 
   handleClick = (x) => {
-    if (this.state.navActiveItem.length > 0) {
-      document
-        .getElementById(this.state.navActiveItem)
-        .classList.remove("navActive");
-    }
-    this.setState({ navActiveItem: x }, () => {
-      document
-        .getElementById(this.state.navActiveItem)
-        .classList.add("navActive");
+    document.getElementById(this.state.activeNav).classList.remove("navActive");
+    this.setState({ activeNav: x }, () => {
+      document.getElementById(this.state.activeNav).classList.add("navActive");
     });
   };
 
@@ -30,31 +23,26 @@ class NavBar extends Component {
           <ul>
             <NavItem
               item="about"
-              text="About"
               tolink="/about"
               click={this.handleClick}
             ></NavItem>
-           <NavItem
+            <NavItem
               item="speakers"
-              text="Lectures and Panels"
               tolink="/speakers"
               click={this.handleClick}
             ></NavItem>
             <NavItem
               item="students"
-              text="Student Posters"
               tolink="/students"
               click={this.handleClick}
             ></NavItem>
             <NavItem
               item="faq"
-              text="FAQs"
               tolink="/faq"
               click={this.handleClick}
             ></NavItem>
             <NavItem
               item="contact"
-              text="Contact"
               tolink="/contact"
               click={this.handleClick}
             ></NavItem>
@@ -63,7 +51,6 @@ class NavBar extends Component {
       </div>
     );
   }
-
 }
 
 export default NavBar;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Translator from "../../components/Translator";
-import { LocaleContext } from "../../components/LocaleContext";
+import Translator from "../../components/locale/Translator";
+import { LocaleContext } from "../../components/locale/LocaleContext";
 
 class posters extends Component {
   /* json for student posters/posters is not properly formatted for translator to 
@@ -29,16 +29,18 @@ class posters extends Component {
     var postersJSON = this.state.posters;
     var postersArr = [];
     Object.keys(postersJSON).forEach(function (key) {
-      if (key != "postersAbout" && key != "postersLink")
+      if (key !== "postersAbout" && key !== "postersLink")
         postersArr.push(postersJSON[key]);
     });
     return (
       <div className="centrefold">
         <div className="tableVert centreVert">
-          <p>
-            <Translator page="posters" text="postersAbout" />
-          </p>
-          <a href="https://uwo.ca">
+          <div className="textBlock">
+            <p>
+              <Translator page="posters" text="postersAbout" />
+            </p>
+          </div>
+          <a className="colouredLink noStyle" href="https://uwo.ca">
             <Translator page="posters" text="postersLink" />
           </a>
           <table>
@@ -53,7 +55,7 @@ class posters extends Component {
               <tr>
                 <td>{poster.name}</td>
                 <td>{poster.uni}</td>
-                <td>{poster.title}</td>
+                <td style={{ textAlign: "left" }}>{poster.title}</td>
                 <td dangerouslySetInnerHTML={{ __html: poster.link }}></td>
               </tr>
             ))}

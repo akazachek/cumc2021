@@ -17,10 +17,16 @@ class Speakers extends Component {
     document
       .getElementById(this.state.activeEvent)
       .classList.remove("eventActive");
+    document
+      .getElementById(this.state.activeEvent + "Icon")
+      .classList.remove("iconActive");
     this.setState({ activeEvent: x }, () => {
       document
         .getElementById(this.state.activeEvent)
         .classList.add("eventActive");
+      document
+        .getElementById(this.state.activeEvent + "Icon")
+        .classList.add("iconActive");
     });
   };
 
@@ -39,10 +45,7 @@ class Speakers extends Component {
         <EventBar
           initial="talks"
           click={this.handleClick}
-          events={[
-            ["talks", "Student Talks"],
-            ["posters", "Student Posters"]
-          ]}
+          events={["talks", "posters"]}
         ></EventBar>
         {this.renderPage(this.state.activeEvent)}
       </div>

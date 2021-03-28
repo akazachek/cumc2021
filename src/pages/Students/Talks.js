@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Translator from "../../components/Translator";
-import { LocaleContext } from "../../components/LocaleContext";
+import Translator from "../../components/locale/Translator";
+import { LocaleContext } from "../../components/locale/LocaleContext";
 
 class Talks extends Component {
   /* json for student talks/posters is not properly formatted for translator to 
@@ -27,18 +27,21 @@ class Talks extends Component {
   render() {
     /* please dont ask me why accessing state directly doesnt work, i have to do this */
     var talksJSON = this.state.talks;
+    /* transform to array to iterate over */
     var talksArr = [];
     Object.keys(talksJSON).forEach(function (key) {
-      if (key != "talksAbout" && key != "talksLink")
+      if (key !== "talksAbout" && key !== "talksLink")
         talksArr.push(talksJSON[key]);
     });
     return (
       <div className="centrefold">
         <div className="tableVert centreVert">
-          <p>
-            <Translator page="talks" text="talksAbout" />
-          </p>
-          <a href="https://uwo.ca">
+          <div className="textBlock">
+            <p>
+              <Translator page="talks" text="talksAbout" />
+            </p>
+          </div>
+          <a className="colouredLink noStyle" href="https://uwo.ca">
             <Translator page="talks" text="talksLink" />
           </a>
           <table>
@@ -50,12 +53,12 @@ class Talks extends Component {
             </tr>
             {/* will not update on context changes, need to fix */}
             {talksArr.map((talk) => (
-                <tr>
+              <tr>
                 <td>{talk.name}</td>
                 <td>{talk.uni}</td>
-                <td>{talk.title}</td>
+                <td style={{ textAlign: "left" }}>{talk.title}</td>
                 <td dangerouslySetInnerHTML={{ __html: talk.link }}></td>
-                </tr>
+              </tr>
             ))}
           </table>
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Translator from "../components/Translator";
+import Translator from "../components/locale/Translator";
 
 class FAQ extends Component {
   render() {
@@ -9,15 +9,20 @@ class FAQ extends Component {
           <h3>
             <Translator page="faq" text="attendQ" />
           </h3>
-          <p className="alignLeft">
-            <Translator page="faq" text="attendA" />
-          </p>
+          <div className="textBlock">
+            <p>
+              <Translator page="faq" text="attendA" />
+            </p>
+          </div>
+
           <h3>
             <Translator page="faq" text="talkQ" />
           </h3>
-          <p className="alignLeft">
-            <Translator page="faq" text="talkA" />
-          </p>
+          <div className="textBlock">
+            <p>
+              <Translator page="faq" text="talkA" />
+            </p>
+          </div>
         </div>
       </div>
     );

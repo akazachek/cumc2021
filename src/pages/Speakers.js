@@ -14,14 +14,21 @@ class Speakers extends Component {
     };
   }
 
+  /* icon implementation was done later, which is why this hacky */
   handleClick = (x) => {
     document
       .getElementById(this.state.activeEvent)
       .classList.remove("eventActive");
+    document
+      .getElementById(this.state.activeEvent + "Icon")
+      .classList.remove("iconActive");
     this.setState({ activeEvent: x }, () => {
       document
         .getElementById(this.state.activeEvent)
         .classList.add("eventActive");
+      document
+        .getElementById(this.state.activeEvent + "Icon")
+        .classList.add("iconActive");
     });
   };
 
@@ -42,11 +49,7 @@ class Speakers extends Component {
         <EventBar
           initial="keynotes"
           click={this.handleClick}
-          events={[
-            ["keynotes", "Keynote Lectures"],
-            ["panel", "Industry Panel"],
-            ["workshop", "Workshop"]
-          ]}
+          events={["keynotes", "panel", "workshop"]}
         ></EventBar>
         {this.renderPage(this.state.activeEvent)}
       </div>

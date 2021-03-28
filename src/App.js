@@ -22,8 +22,9 @@ import Contact from "./pages/Contact";
 
 /* components */
 import NavBar from "./components/NavBar";
-import { LocaleContext } from "./components/LocaleContext";
-import LocaleSwitch from "./components/LocaleSwitch";
+import { LocaleContext } from "./components/locale/LocaleContext";
+import LocaleSwitch from "./components/locale/LocaleSwitch";
+import Registrator from "./components/registration/Registrator";
 
 class App extends Component {
   constructor(props) {
@@ -45,12 +46,14 @@ class App extends Component {
         <div className="App">
           <header className="menu">
             <div className="fullWidth">
-              <img src={header} className="header" alt="CUMC 2021" />
+              <img src={header} className="headerImg" alt="CUMC 2021" />
               {/* load default homepage */}
               <Route exact path="/">
                 <Redirect to="/about" />
               </Route>
-              <NavBar />
+              <LocaleContext.Provider value={this.state.locale}>
+                <NavBar />
+              </LocaleContext.Provider>
               <LocaleSwitch
                 locale={this.state.locale}
                 changeLocale={this.changeLocale}
@@ -66,6 +69,7 @@ class App extends Component {
                 <Route path="/faq" component={FAQ} />
                 <Route path="/contact" component={Contact} />
               </Switch>
+              <Registrator />
             </LocaleContext.Provider>
           </body>
         </div>

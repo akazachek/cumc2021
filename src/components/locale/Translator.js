@@ -12,8 +12,8 @@ class Translator extends Component {
 
   componentDidMount() {
     const fetchLocale = async () => {
-      const en = await require("../content/" + this.props.page + "/en.json");
-      const fr = await require("../content/" + this.props.page + "/fr.json");
+      const en = await require("../../content/" + this.props.page + "/en.json");
+      const fr = await require("../../content/" + this.props.page + "/fr.json");
       this.setState({
         en: en,
         fr: fr
@@ -23,7 +23,7 @@ class Translator extends Component {
   }
 
   render() {
-    /* value will be passed as string */
+    /* idk why i have to copy this over here but it wont work if i access state directly so */
     var locales = {
       en: this.state.en,
       fr: this.state.fr

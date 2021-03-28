@@ -15,9 +15,8 @@ class EventBar extends Component {
         <ul>
           {this.props.events.map((event) => (
             <EventItem
-              clss={event[0] == this.props.initial ? "eventActive" : ""}
-              item={event[0]}
-              text={event[1]}
+              clss={event == this.props.initial ? "eventActive" : ""}
+              item={event}
               click={this.props.click}
             />
           ))}
