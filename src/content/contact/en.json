@@ -3,5 +3,12 @@
     "contact": "For general inquiries, please contact us at ",
     "president": "President",
     "role1": "role 1",
-    "role2": "another role"
+    "role2": "another role",
+    "media": "Graphic Design",
+    "comms": "Marketing",
+    "tech": "Website & Technology",
+    "money": "Finance",
+    "outreach": "Outreach & Sponsorships",
+    "words": "Writing & Translation",
+    "socials": "Social Media"
 }

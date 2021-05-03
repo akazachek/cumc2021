@@ -5,7 +5,10 @@ import { NavLink } from "react-router-dom";
 class NavItem extends Component {
   render() {
     return (
-      <li id={this.props.item} className="hvr-sweep-to-bottom">
+      <li
+        id={this.props.item}
+        className={"hvr-sweep-to-bottom " + this.props.active}
+      >
         <NavLink
           to={this.props.tolink}
           activeClassName="navActive"

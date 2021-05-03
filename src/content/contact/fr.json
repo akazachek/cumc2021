@@ -1,7 +1,14 @@
 {
-    "committee": "Organizing Commitee",
-    "contact": "For general inquiries, please contact us at ",
-    "president": "President of France",
+    "committee": "Comité Organisateur",
+    "contact": "Pour toute question, veuillez nous contacter à l'adresse suivante ",
+    "president": "President",
     "role1": "french role 1",
-    "role2": "another role (but french)"
+    "role2": "another role (but french)",
+    "media": "Conception Graphique",
+    "comms": "Marketing",
+    "tech": "Site Web et Technologie",
+    "money": "Finances",
+    "outreach": "Sensibilisation et Parrainage",
+    "words": "Rédaction et Traduction",
+    "socials": "Médias Sociaux"
 }

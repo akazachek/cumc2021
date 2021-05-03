@@ -1,56 +1,75 @@
-import React, { Component } from "react";
+import React from "react";
+import MobileDetector from "./MobileDetector";
 import NavItem from "./NavItem";
 
-class NavBar extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeNav: "about"
-    };
-  }
+function NavBar() {
+  var activeNav = "about";
 
-  handleClick = (x) => {
-    document.getElementById(this.state.activeNav).classList.remove("navActive");
-    this.setState({ activeNav: x }, () => {
-      document.getElementById(this.state.activeNav).classList.add("navActive");
-    });
+  const handleClick = (x) => {
+    document.getElementById(activeNav).classList.remove("navActive");
+    activeNav = x;
+    document.getElementById(activeNav).classList.add("navActive");
   };
 
-  render() {
-    return (
-      <div class="navBar">
-        <nav>
+  const isMobile = MobileDetector();
+
+  return (
+    <div class="navBar">
+      <nav>
+        {isMobile ? (
+          <div id="mobileMenu">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul>
+              <NavItem
+                item="about"
+                tolink="/about"
+                click={handleClick}
+              ></NavItem>
+              <NavItem
+                item="speakers"
+                tolink="/speakers"
+                click={handleClick}
+              ></NavItem>
+              <NavItem
+                item="students"
+                tolink="/students"
+                click={handleClick}
+              ></NavItem>
+              <NavItem item="faq" tolink="/faq" click={handleClick}></NavItem>
+              <NavItem
+                item="contact"
+                tolink="/contact"
+                click={handleClick}
+              ></NavItem>
+            </ul>
+          </div>
+        ) : (
           <ul>
-            <NavItem
-              item="about"
-              tolink="/about"
-              click={this.handleClick}
-            ></NavItem>
+            <NavItem item="about" tolink="/about" click={handleClick}></NavItem>
             <NavItem
               item="speakers"
               tolink="/speakers"
-              click={this.handleClick}
+              click={handleClick}
             ></NavItem>
             <NavItem
               item="students"
               tolink="/students"
-              click={this.handleClick}
+              click={handleClick}
             ></NavItem>
-            <NavItem
-              item="faq"
-              tolink="/faq"
-              click={this.handleClick}
-            ></NavItem>
+            <NavItem item="faq" tolink="/faq" click={handleClick}></NavItem>
             <NavItem
               item="contact"
               tolink="/contact"
-              click={this.handleClick}
+              click={handleClick}
             ></NavItem>
           </ul>
-        </nav>
-      </div>
-    );
-  }
+        )}
+      </nav>
+    </div>
+  );
 }
 
 export default NavBar;
