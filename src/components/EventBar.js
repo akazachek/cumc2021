@@ -11,7 +11,7 @@ class EventBar extends Component {
 
   render() {
     return (
-      <div className="eventBar tableVert">
+      <div className="eventBar">
         <ul>
           {this.props.events.map((event) => (
             <EventItem

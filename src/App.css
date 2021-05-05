@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
 
 p,
 a,
@@ -9,23 +9,26 @@ h2,
 h3,
 h4,
 td {
-  font-family: "Raleway", "sans serif";
+  font-family: "Raleway", sans-serif;
 }
 
 p,
 td,
 td > a {
   font-size: 20px;
+  font-weight: 300;
 }
 
 a,
 button,
 h3 {
   font-size: 25px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 35px;
+  font-weight: 700;
 }
 
 /* || VARS */
@@ -68,18 +71,21 @@ body {
   margin: 0;
   border-bottom: solid 4px var(--dark-purple);
   border-top: solid 4px var(--dark-purple);
+  padding: 0;
 }
 
 .navBar ul li {
   display: inline-block;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  margin-bottom: -1px;
 }
 
 .navBar ul li a {
   text-decoration: none;
   padding: 2vh;
   color: var(--light-purple);
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 769px) {
@@ -135,6 +141,9 @@ body {
   left: 0;
   position: fixed;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .eventBar ul li {
@@ -150,6 +159,7 @@ body {
 
 .eventDiv {
   color: var(--purple);
+  font-weight: 500;
 }
 
 .eventIcon {
@@ -400,6 +410,8 @@ body {
 }
 
 .headerImg {
+  width: auto;
+  max-height: 20vh;
   margin: 0;
 }
 
@@ -421,13 +433,16 @@ table {
 }
 
 .sponsor {
-  height: auto;
-  width: 10vh;
+  height: 15vh;
+  width: auto;
   padding-left: 4vw;
   padding-right: 4vw;
 }
 
 /* || MOBILE */
+
+/* not making the mobile website first is my biggest
+regret of 2021, calling it now */
 
 @media only screen and (max-width: 768px) {
   .headerImg {
@@ -509,7 +524,7 @@ table {
   }
 
   #mobileMenu input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0.2vh, -0.2vh);
+    transform: rotate(-45deg) translate(0.1vh, -0.2vh);
   }
 
   #mobileMenu ul {
@@ -548,7 +563,7 @@ table {
   .navActive {
     background: none;
     color: var(--dark-purple) !important;
-    font-weight: bold;
+    font-weight: 700 !important;
     text-decoration: none;
   }
 
@@ -558,6 +573,7 @@ table {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 7vh;
   }
 
   #aboutImg {
@@ -591,7 +607,55 @@ table {
     background-color: var(--dark-purple) !important;
   }
 
-  .sponsor {
-    margin-bottom: 5vh;
+  .roundedImg {
+    height: auto;
+    width: 50vw;
+  }
+
+  .eventDiv {
+    display: inline-flex;
+    width: 30vw;
+  }
+
+  .eventDiv li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .eventBar {
+    background: var(--light-purple);
+    position: relative;
+    height: unset;
+  }
+
+  .eventBar ul {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .eventDiv li p {
+    margin: 0;
+    padding-top: 1vh;
+    flex: 1;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  table {
+    table-layout: fixed;
+  }
+
+  td {
+    max-width: 30vw;
+    word-wrap: break-word;
+  }
+
+  .committeeMember {
+    width: 40vw;
+    margin-left: 5vw;
   }
 }

@@ -1,6 +1,3 @@
-/* media */
-
-import header from "./media/header.png";
 import "./App.css";
 
 /* technical */
@@ -25,6 +22,7 @@ import NavBar from "./components/NavBar";
 import { LocaleContext } from "./components/locale/LocaleContext";
 import LocaleSwitch from "./components/locale/LocaleSwitch";
 import Registrator from "./components/registration/Registrator";
+import Header from "./components/Header.js";
 
 class App extends Component {
   constructor(props) {
@@ -46,7 +44,7 @@ class App extends Component {
         <div className="App">
           <header className="menu">
             <div className="fullWidth">
-              <img src={header} className="headerImg" alt="CUMC 2021" />
+              <Header />
               {/* load default homepage */}
               <Route exact path="/">
                 <Redirect to="/about" />

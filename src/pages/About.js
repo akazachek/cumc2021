@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Translator from "../components/locale/Translator";
 import MobileDetector from "../components/MobileDetector";
 

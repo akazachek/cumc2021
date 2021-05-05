@@ -16,6 +16,9 @@ function NavBar() {
   return (
     <div class="navBar">
       <nav>
+        {/* if you are redesigning this site, i highly recommend you make an entirely separate 
+        mobile navbar component first, rather than doing what i did - using hacky CSS to fix this
+        after the website is done */}
         {isMobile ? (
           <div id="mobileMenu">
             <input type="checkbox" />
