@@ -1,52 +1,11 @@
 {
-    "talksAbout": "Nunc elementum magna ut lorem tempus molestie. Praesent vitae gravida sapien. Vivamus sapien nisi, volutpat ut iaculis interdum, congue ac lacus. Etiam felis sapien, suscipit ultricies tincidunt ut, scelerisque a ante. Vestibulum imperdiet nulla risus, sit amet consectetur eros elementum pretium. Proin eleifend quam augue, non facilisis urna scelerisque in. Praesent vitae lacus felis. Suspendisse potenti. Maecenas at nisl tellus. Proin eu posuere neque. Suspendisse ac risus vehicula, viverra sem quis, ultricies justo. Duis justo neque, iaculis ut bibendum id, malesuada eu libero. Cras ultrices sapien vel massa sollicitudin vulputate.",
+    "talksAbout": "Student talks are a foundation of the conference. Students provide talks up to fifteen minutes in length on a topic in the mathematical sciences. Student talks are a great chance to learn about other facets of math from passionate students!",
     "talksLink": "Click here to register to give a talk. Please note you must register for CUMC first.",
     "Student 1": {
-        "name": "Student 1",
-        "uni": "UWO",
-        "title": "cwqdawdjhbq3wuyihdiuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
+        "name": "|",
+        "uni": "|",
+        "title": "|",
+        "link": "|"
     },
-    "Student 2": {
-        "name": "Student 2",
-        "uni": "UWO",
-        "title": "ce12312 2222222222222222 22222222 22222222 22222222222222iuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
-    },
-    "Student 3": {
-        "name": "Student 3",
-        "uni": "Waterloo",
-        "title": "241231E34dsaXC1dddiuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"reddit.com\">Slides</a>"
-    },
-    "Student 4": {
-        "name": "Student 4",
-        "uni": "UofT",
-        "title": "cdad2uyihdiuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"reddit.com\">Slides</a>"
-    },
-    "Student 5": {
-        "name": "Student 5",
-        "uni": "UWO",
-        "title": "cwdwddddduyihdiuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
-    },
-    "Student 6": {
-        "name": "Student 6",
-        "uni": "McGill",
-        "title": "cwp;;[f;w[ef;[ewf;[ew;f[we;f[ewfl4pwef",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
-    },
-    "Student 7": {
-        "name": "Student 7",
-        "uni": "UBC",
-        "title": "zxczcefsefmnyum",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
-    },
-    "Student 8": {
-        "name": "Student 8",
-        "uni": "UWO",
-        "title": "cwdwv vvvvvvvv vvvvvyi hdiuqhd",
-        "link": "<a class=\"colouredLink noStyle\" href=\"google.com\">Video</a>"
-    }
+
 }
