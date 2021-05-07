@@ -3,7 +3,6 @@ import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
 import generic from "../../media/generic1.png";
-import madhu from "../../media/madhu.jpg";
 
 function Keynotes() {
   const isMobile = MobileDetector();
