@@ -2,7 +2,7 @@ import React from "react";
 import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
-import yashan from "../../media/yashan.jpg";
+import generic from "../../media/generic3.png";
 
 function Workshop() {
   const isMobile = MobileDetector();
@@ -12,7 +12,7 @@ function Workshop() {
     <div className="centrefold">
       <div className="tableVert">
         <div className={containerClass}>
-          <img src={yashan} className="roundedImg" />
+          <img src={generic} className="roundedImg" />
           <div>
             <h2 className="speakerName">
               <Translator page="workshop" text="yashanInfo" />
