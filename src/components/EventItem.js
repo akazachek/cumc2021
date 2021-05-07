@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Translator from "./locale/Translator";
 import MobileDetector from "./MobileDetector";
 
@@ -6,7 +6,7 @@ import { IoCaretForwardCircle } from "react-icons/io5";
 import { IconContext } from "react-icons";
 
 function EventItem(props) {
-  const iconClass = props.clss === "eventActive" ? " iconActive" : "";
+  const iconClass = props.clss === "eventActive" ? " iconActive" : ""; // not hardcoded so icons can change colour too
   const isMobile = MobileDetector();
   return (
     <div className="eventDiv">

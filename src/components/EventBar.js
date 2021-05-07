@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import EventItem from "./EventItem";
 
+// renders a navigation bar with an indeterminate amount of elements
+// e.g. see lectures page or student page
 class EventBar extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,8 @@ class EventBar extends Component {
     return (
       <div className="eventBar">
         <ul>
+          {/* an array of strings `events` corresponding to the desired navigation
+          items is passed as props */}
           {this.props.events.map((event) => (
             <EventItem
               clss={event === this.props.initial ? "eventActive" : ""}

@@ -6,7 +6,7 @@ const MobileDetector = () => {
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
   };
-
+  // theres no way this efficient
   useEffect(() => {
     window.addEventListener("resize", handleWindowSizeChange);
     return () => {

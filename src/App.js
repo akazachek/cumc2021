@@ -1,7 +1,6 @@
 import "./App.css";
 
-/* technical */
-
+// technical
 import {
   BrowserRouter as Router,
   Route,
@@ -10,14 +9,14 @@ import {
 } from "react-router-dom";
 import React, { Component } from "react";
 
-/* pages in site */
+// pages in site
 import About from "./pages/About";
 import Speakers from "./pages/Speakers";
 import Students from "./pages/Students";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 
-/* components */
+// components
 import NavBar from "./components/NavBar";
 import { LocaleContext } from "./components/locale/LocaleContext";
 import LocaleSwitch from "./components/locale/LocaleSwitch";

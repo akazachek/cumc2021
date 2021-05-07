@@ -17,9 +17,9 @@ function Panel() {
             <h2 className="speakerName">
               <Translator page="panel" text="panelHeader" />
             </h2>
-            <h3 style={{ textAlign: "left" }}>
+            <p style={{ textAlign: "left" }}>
               <Translator page="panel" text="panelComing" />
-            </h3>
+            </p>
             <p style={{ textAlign: "left" }}>
               <Translator page="panel" text="panelContact" />
             </p>

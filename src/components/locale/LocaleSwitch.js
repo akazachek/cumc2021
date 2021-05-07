@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// creates a button which references an onClick passed
+// as a prop (in App.js) to swap between two locales
 class LocaleSwitch extends Component {
   constructor(props) {
     super(props);
