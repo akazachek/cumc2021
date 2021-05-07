@@ -142,6 +142,10 @@ body {
   justify-content: center;
 }
 
+.eventBar ul {
+  margin-left: -1vw;
+}
+
 .eventBar ul li {
   padding: 1vh;
   list-style: none;
@@ -635,6 +639,7 @@ regret of 2021, calling it now */
     padding: 0;
     width: 100%;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .eventDiv li p {

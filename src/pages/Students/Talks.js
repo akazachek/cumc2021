@@ -31,7 +31,7 @@ class Talks extends Component {
     var talksArr = [];
     Object.keys(talksJSON).forEach(function (key) {
       // three-way and operator because i cannot plan ahead
-      if (key.charAt(0) == "S") talksArr.push(talksJSON[key]);
+      if (key.charAt(0) === "S") talksArr.push(talksJSON[key]);
     });
     return (
       <div className="centrefold">
