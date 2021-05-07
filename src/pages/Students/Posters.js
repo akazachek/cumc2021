@@ -29,8 +29,8 @@ class posters extends Component {
     var postersJSON = this.state.posters;
     var postersArr = [];
     Object.keys(postersJSON).forEach(function (key) {
-      if (key !== "postersAbout" && key !== "postersLink")
-        postersArr.push(postersJSON[key]);
+      // three-way and operator because i cannot plan ahead
+      if (key.charAt(0) == "S") postersArr.push(postersJSON[key]);
     });
     return (
       <div className="centrefold">
@@ -45,10 +45,19 @@ class posters extends Component {
           </a>
           <table>
             <tr>
-              <th>Name</th>
-              <th>University</th>
-              <th>Title</th>
-              <th>View Poster</th>
+              <th>
+                {" "}
+                <Translator page="posters" text="tableName" />
+              </th>
+              <th>
+                <Translator page="posters" text="tableUni" />
+              </th>
+              <th>
+                <Translator page="posters" text="tableTitle" />
+              </th>
+              <th>
+                <Translator page="posters" text="tableLink" />
+              </th>
             </tr>
             {/* will not update on context changes, need to fix */}
             {postersArr.map((poster) => (

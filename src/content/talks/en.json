@@ -1,11 +1,14 @@
 {
     "talksAbout": "Student talks are a foundation of the conference. Students provide talks up to fifteen minutes in length on a topic in the mathematical sciences. Student talks are a great chance to learn about other facets of math from passionate students!",
     "talksLink": "Click here to register to give a talk. Please note you must register for CUMC first.",
+    "tableName": "Name",
+    "tableUni": "University",
+    "tableTitle": "Title",
+    "tableLink": "Link",
     "Student 1": {
         "name": "|",
         "uni": "|",
         "title": "|",
         "link": "|"
-    },
-
+    }
 }

@@ -30,8 +30,8 @@ class Talks extends Component {
     /* transform to array to iterate over */
     var talksArr = [];
     Object.keys(talksJSON).forEach(function (key) {
-      if (key !== "talksAbout" && key !== "talksLink")
-        talksArr.push(talksJSON[key]);
+      // three-way and operator because i cannot plan ahead
+      if (key.charAt(0) == "S") talksArr.push(talksJSON[key]);
     });
     return (
       <div className="centrefold">
@@ -46,10 +46,19 @@ class Talks extends Component {
           </a>
           <table>
             <tr>
-              <th>Name</th>
-              <th>University</th>
-              <th>Title</th>
-              <th>Link</th>
+              <th>
+                {" "}
+                <Translator page="talks" text="tableName" />
+              </th>
+              <th>
+                <Translator page="talks" text="tableUni" />
+              </th>
+              <th>
+                <Translator page="talks" text="tableTitle" />
+              </th>
+              <th>
+                <Translator page="talks" text="tableLink" />
+              </th>
             </tr>
             {/* will not update on context changes, need to fix */}
             {talksArr.map((talk) => (
