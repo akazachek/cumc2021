@@ -8,6 +8,7 @@ import { IconContext } from "react-icons";
 function EventItem(props) {
   const iconClass = props.clss === "eventActive" ? " iconActive" : ""; // not hardcoded so icons can change colour too
   const isMobile = MobileDetector();
+  const iconStyle = !isMobile ? { "padding-right": "0.2vw" } : null;
   return (
     <div className="eventDiv">
       <li
@@ -20,7 +21,7 @@ function EventItem(props) {
             className: "eventIcon" + iconClass
           }}
         >
-          <IoCaretForwardCircle id={props.item + "Icon"} />
+          <IoCaretForwardCircle id={props.item + "Icon"} style={iconStyle} />
         </IconContext.Provider>
         {isMobile ? (
           <p>

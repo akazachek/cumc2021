@@ -181,7 +181,7 @@ body {
   margin: 1.5vw;
   background-color: var(--purple);
   color: var(--light-purple);
-  border-radius: 10%;
+  border-radius: 5%;
   border-style: none;
   padding: 1%;
 }
@@ -199,7 +199,7 @@ body {
   margin: 1.5vw;
   background-color: var(--purple);
   color: var(--light-purple);
-  border-radius: 10%;
+  border-radius: 5%;
   border-style: none;
 }
 

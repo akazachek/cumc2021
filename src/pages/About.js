@@ -4,8 +4,8 @@ import MobileDetector from "../components/MobileDetector";
 
 import mc from "../media/mc.jpg";
 import booklet from "../media/assign4.pdf";
-import uwo from "../media/uwo.jpg";
-import fields from "../media/fields.png";
+import uwo from "../media/uwo.png";
+import studc from "../media/studc.png";
 
 function About() {
   const isMobile = MobileDetector();
@@ -36,8 +36,12 @@ function About() {
         </a>
       </div>
       <div className="tableHoriz">
-        <img src={uwo} className="sponsor" />
-        <img src={fields} className="sponsor" />
+        <a href="https://www.uwo.ca">
+          <img src={uwo} className="sponsor" />
+        </a>
+        <a href="https://studc.math.ca">
+          <img src={studc} className="sponsor" style={{ height: "13vh" }} />
+        </a>
       </div>
     </div>
   );
