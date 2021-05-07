@@ -15,16 +15,13 @@ function Panel() {
           <img src={generic} className="roundedImg" />
           <div>
             <h2 className="speakerName">
-              <Translator page="panel" text="jeffInfo" />
+              <Translator page="panel" text="panelHeader" />
             </h2>
-            <h3 className="speakerInst">
-              <Translator page="panel" text="jeffInst" />
-            </h3>
             <h3 style={{ textAlign: "left" }}>
-              <Translator page="panel" text="jeffTalk" />
+              <Translator page="panel" text="panelComing" />
             </h3>
             <p style={{ textAlign: "left" }}>
-              <Translator page="panel" text="jeffAbstract" />
+              <Translator page="panel" text="panelContact" />
             </p>
           </div>
         </div>
