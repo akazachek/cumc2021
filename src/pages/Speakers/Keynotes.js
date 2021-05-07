@@ -12,20 +12,15 @@ function Keynotes() {
     <div className="centrefold">
       <div className="tableVert">
         <div className={containerClass}>
-          <img src={generic} className="roundedImg" />
-          <div>
-            <h2 className="speakerName">
-              <Translator page="keynotes" text="jakeInfo" />
-            </h2>
-            <h3 className="speakerInst">
-              <Translator page="keynotes" text="jakeInst" />
-            </h3>
-            <h3 style={{ textAlign: "left" }}>
-              <Translator page="keynotes" text="jakeTalk" />
-            </h3>
-            <p style={{ textAlign: "left" }}>
-              <Translator page="keynotes" text="jakeAbstract" />
-            </p>
+          
+                  <div>
+                      <p style={{ textAlign: "center" }}>
+                          <Translator page="keynotes" text="keynotesComing" />
+                      </p>
+
+                      <p style={{ textAlign: "center" }}>
+                          <Translator page="keynotes" text="keynoteInquiries" />
+                      </p>
           </div>
         </div>
       </div>
