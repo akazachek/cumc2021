@@ -15,16 +15,14 @@ function Workshop() {
           <img src={generic} className="roundedImg" />
           <div>
             <h2 className="speakerName">
-              <Translator page="workshop" text="yashanInfo" />
+              <Translator page="workshop" text="workshopHeader" />
             </h2>
-            <h3 className="speakerInst">
-              <Translator page="workshop" text="yashanInst" />
-            </h3>
+           
             <h3 style={{ textAlign: "left" }}>
-              <Translator page="workshop" text="yashanTalk" />
+              <Translator page="workshop" text="workshopInfo" />
             </h3>
             <p style={{ textAlign: "left" }}>
-              <Translator page="workshop" text="yashanAbstract" />
+              <Translator page="workshop" text="workshopContact" />
             </p>
           </div>
         </div>
