@@ -387,6 +387,25 @@ body {
   text-align: left;
 }
 
+/* || FAQ */
+
+.faqIconContainer {
+  float: left;
+  padding-right: 2vw;
+}
+
+.faqHead {
+  width: 80%;
+  color: var(--purple);
+  display: flex;
+  align-items: center;
+}
+
+.faqHead:hover,
+.faqHeadOpen {
+  color: var(--dark-purple);
+}
+
 /* || IDs */
 
 #bookletLink {
