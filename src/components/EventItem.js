@@ -3,7 +3,7 @@ import Translator from "./locale/Translator";
 import MobileDetector from "./MobileDetector";
 
 import { IconContext } from "react-icons";
-import { BsForwardFill } from "react-icons/bs";
+import { BsForwardFill, BsFillCaretDownFill } from "react-icons/bs";
 
 function EventItem(props) {
   const iconClass = props.clss === "eventActive" ? " iconActive" : ""; // not hardcoded so icons can change colour too
@@ -21,7 +21,11 @@ function EventItem(props) {
             className: "eventIcon" + iconClass
           }}
         >
-          <BsForwardFill id={props.item + "Icon"} style={iconStyle} />
+          {isMobile ? (
+            <BsFillCaretDownFill id={props.item + "Icon"} style={iconStyle} />
+          ) : (
+            <BsForwardFill id={props.item + "Icon"} style={iconStyle} />
+          )}
         </IconContext.Provider>
         {isMobile ? (
           <p>
