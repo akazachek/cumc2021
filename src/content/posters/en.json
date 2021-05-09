@@ -1,6 +1,6 @@
 {
-    "postersAbout": "Fusce sed arcu euismod, mattis purus sit amet, fringilla elit. Proin iaculis pulvinar ex, quis consequat arcu vehicula eget. Quisque facilisis massa vitae massa mattis, et venenatis nunc fermentum. Duis mattis facilisis augue at vulputate. Nullam scelerisque magna id interdum condimentum. Donec suscipit tincidunt ex. Nulla sem enim, cursus ut rutrum non, molestie in metus. Etiam dictum dolor eget tellus tempor, ut ultrices dolor placerat. Suspendisse aliquam, risus vitae imperdiet rutrum, lectus justo lacinia leo, vitae viverra erat leo quis augue. Sed varius fringilla erat vel blandit. In id laoreet mi. In et tristique nulla. In tempus magna sit amet lacinia ultrices. Donec malesuada lectus vel facilisis placerat. Nullam luctus eleifend ante, at interdum dolor egestas ut. Duis nibh ligula, feugiat sed mattis nec, blandit egestas leo.",
-    "postersLink": "Please click here to submit a poster. Please note you must be registered for the talk before hand.",
+    "postersAbout": "In addition to giving talks, students also have the option of submitting posters. These posters, much like the talks, can be about anything in the mathematical sciences. These can be expository posters about a problem or topic in the mathematical sciences, or they can be displays of projects.",
+    "postersLink": "Please click here to submit a poster. Please note you must be registered for the conference before hand.",
     "tableName": "Name",
     "tableUni": "University",
     "tableTitle": "Title",
