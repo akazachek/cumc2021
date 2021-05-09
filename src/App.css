@@ -399,6 +399,7 @@ body {
   color: var(--purple);
   display: flex;
   align-items: center;
+  text-align: left;
 }
 
 .faqHead:hover,
