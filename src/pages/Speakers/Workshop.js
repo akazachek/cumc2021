@@ -17,10 +17,10 @@ function Workshop() {
             <h2 className="speakerName">
               <Translator page="workshop" text="workshopHeader" />
             </h2>
-           
-            <h3 style={{ textAlign: "left" }}>
+
+            <p style={{ textAlign: "left" }}>
               <Translator page="workshop" text="workshopInfo" />
-            </h3>
+            </p>
             <p style={{ textAlign: "left" }}>
               <Translator page="workshop" text="workshopContact" />
             </p>
