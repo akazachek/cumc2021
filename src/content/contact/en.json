@@ -1,14 +1,12 @@
 {
     "committee": "Organizing Commitee",
-    "contact": "For general inquiries, please contact us at ",
+    "contact": "For any inquiries, please contact us at ",
     "president": "President",
-    "role1": "role 1",
-    "role2": "another role",
+    "int": "Internal Communications",
+    "events": "Workshop & Panel Design",
     "media": "Graphic Design",
-    "comms": "Marketing",
-    "tech": "Website & Technology",
-    "money": "Finance",
-    "outreach": "Outreach & Sponsorships",
-    "words": "Writing & Translation",
-    "socials": "Social Media"
+    "comms": "Promotion",
+    "tech": "Website & IT",
+    "money": "Finance & Accessibility",
+    "words": "Content & Translation"
 }

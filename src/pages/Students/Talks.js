@@ -41,7 +41,7 @@ class Talks extends Component {
               <Translator page="talks" text="talksAbout" />
             </p>
           </div>
-          <a className="colouredLink noStyle" href="https://uwo.ca">
+          <a className="colouredLink noStyle" href="#">
             <Translator page="talks" text="talksLink" />
           </a>
           <table>

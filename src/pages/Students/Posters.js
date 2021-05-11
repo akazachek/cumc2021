@@ -40,7 +40,7 @@ class posters extends Component {
               <Translator page="posters" text="postersAbout" />
             </p>
           </div>
-          <a className="colouredLink noStyle" href="https://uwo.ca">
+          <a className="colouredLink noStyle" href="#">
             <Translator page="posters" text="postersLink" />
           </a>
           <table>

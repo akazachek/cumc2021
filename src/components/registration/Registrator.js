@@ -2,6 +2,9 @@ import React, { Component, Fragment } from "react";
 import RegisterForm from "./RegisterForm";
 import RegisterButton from "./RegisterButton";
 
+// this contains the backbones of a modal form designed
+// to handle input. currently, it is not implemented as
+// registration merely links to a separate website
 export class Registrator extends Component {
   constructor(props) {
     super(props);

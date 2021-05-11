@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import FocusTrap from "focus-trap-react";
 
+// this contains the backbones of a modal form designed
+// to handle input. currently, it is not implemented as
+// registration merely links to a separate website
 export const Modal = (props) => {
   return ReactDOM.createPortal(
     <FocusTrap>

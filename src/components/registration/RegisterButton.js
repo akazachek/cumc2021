@@ -6,9 +6,10 @@ class RegisterButton extends Component {
     return (
       <button
         onClick={this.props.click.bind(this)}
-        className="registerButton hvr-wobble-to-top-right"
+        // hvr-wobble-to-top-right
+        className="registerButton"
       >
-        <Translator page="registration" text="register" />
+        <Translator page="navigation" text="register" />
       </button>
     );
   }
