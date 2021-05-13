@@ -1,14 +1,12 @@
 {
-    "committee": "Comité Organisateur",
-    "contact": "Pour toute question, veuillez nous contacter à l'adresse suivante ",
-    "president": "President",
-    "role1": "french role 1",
-    "role2": "another role (but french)",
-    "media": "Conception Graphique",
-    "comms": "Marketing",
-    "tech": "Site Web et Technologie",
-    "money": "Finances",
-    "outreach": "Sensibilisation et Parrainage",
-    "words": "Rédaction et Traduction",
-    "socials": "Médias Sociaux"
+  "committee": "Comité d'organisation",
+  "contact": "Pour toute demande de renseignements, veuillez nous contacter à.",
+  "president": "Président",
+  "int": " Communications internes",
+  "events": "Conception d'ateliers et de panels",
+  "media": "Design graphique",
+  "comms": "Promotion",
+  "tech": " Site web et informatique",
+  "money": "Finance & Accessibilité",
+  "words": "Contenu et traduction"
 }
