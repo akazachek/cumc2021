@@ -1,13 +1,14 @@
 {
-    "about": "About",
-    "speakers": "Lectures and Panels",
-    "students": "Student Posters",
-    "faq": "FAQ",
-    "contact": "Contact",
-    "keynotes": "Keynote Lectures",
-    "panel": "Industry Panel",
-    "talks": "Student Talks",
-    "posters": "Student Posters",
-    "workshop": "Workshop",
-    "register": "Register now!"
+  "about": " A propos ",
+  "speakers": " Les notes clés et autres ",
+  "Students": " Les sessions des étudiants ",
+  "faq": "FAQ",
+  "contact": "Contact:",
+  "keynotes": "Les notes clés de Lectures",
+  "panel": "Panel industriel",
+  "talks": " Conversations d'étudiants ",
+  "posters": "Affiches d'étudiants",
+  "Workshop": " Ateliers ",
+  "register": "Inscrivez-vous maintenant !"
+
 }
