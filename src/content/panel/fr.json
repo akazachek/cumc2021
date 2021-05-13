@@ -1,9 +1,6 @@
 {
-    "timInfo": "French Apple",
-    "timInst": "Apple - CEO",
-    "timAbstract": " fr Nunc vehicula justo elementum eros finibus sagittis. Cras malesuada mi id ligula suscipit pharetra. Integer malesuada, lorem vitae suscipit malesuada, ex mi porta orci, quis pulvinar tellus lorem eget nunc. Suspendisse ultrices mi sapien, vitae convallis augue placerat in. Etiam elementum, eros et lobortis maximus, orci sapien dapibus eros, eget iaculis ante risus eget lectus. Nulla id odio velit. Vestibulum eleifend augue ut ornare venenatis. Morbi non nulla et metus varius suscipit in et enim.",
-    "jeffInfo": "Jeff fr Amazon",
-    "jeffInst": "Amazon - CEO",
-    "jeffTalk": "fr Professional Balding",
-    "jeffAbstract": " fr Phasellus viverra orci eu congue facilisis. Pellentesque eu pharetra ante, vel accumsan nunc. Fusce gravida cursus neque, et egestas nisl sagittis vel. Ut pretium, arcu in convallis blandit, leo enim congue erat, ac dictum nulla magna in dui. Duis eu lectus ut quam auctor hendrerit. Pellentesque sed libero et nunc vestibulum suscipit vitae vel erat. Ut iaculis varius maximus. Curabitur sed lacinia mauris, quis aliquet lectus. Pellentesque iaculis, ligula non ultricies venenatis, arcu urna egestas elit, eget feugiat risus erat ut risus. Aenean a orci ac risus suscipit tristique non vel urna. Phasellus accumsan fermentum lacus, vel aliquam ante vehicula ut. Pellentesque molestie lacinia mauris, consectetur scelerisque ligula convallis sed. Etiam tincidunt dapibus ipsum, id luctus neque tristique ultricies. Ut quis convallis arcu. Cras nec tempus lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+  "panelHeader": "Panneaux en cours d'assemblage",
+  "panelComing": "Les panels industriels sont une occasion d'explorer comment les mathématiques peuvent évoluer vers une carrière dans la finance, la technologie ou d'autres disciplines. Des professionnels se réunissent pour donner et comparer leurs points de vue sur leurs carrières, et répondre à toutes les questions que vous pourriez avoir.",
+  "panelContact": "Si vous souhaitez participer à un panel ou si vous connaissez quelqu'un qui pourrait le faire, veuillez nous contacter."
+
 }
