@@ -1,15 +1,15 @@
-  
 {
-    "talksAbout": "Student talks are a foundation of the conference. Students provide talks up to fifteen minutes in length on a topic in the mathematical sciences. Student talks are a great chance to learn about other facets of math from passionate students!",
-    "talksLink": "Click here to register to give a talk. Please note you must register for CUMC first.",
-    "tableName": "Name",
-    "tableUni": "University",
-    "tableTitle": "Title",
-    "tableLink": "Link",
-    "Student 1": {
-        "name": "|",
-        "uni": "|",
-        "title": "|",
-        "link": "|"
-    }
+  "talksAbout": "Les exposés des étudiants sont la base de chaque CUMC. En vous inscrivant à la conférence, vous êtes invité à donner une conférence d'une durée maximale de 15 minutes sur n'importe quel sujet en mathématiques, mathématiques appliquées, statistiques mathématiques ou autres sciences mathématiques. Les exposés peuvent porter sur la recherche, l'étude indépendante ou tout autre sujet que vous souhaitez partager.",
+  "talksLink": "L'inscription aux exposés sera ouverte en même temps que l'inscription à la conférence.",
+  "tableName": " Nom ",
+  "tableUni": "Université",
+  "tableTitle": "Titre",
+  "tableLink": " Lien ",
+  "Student 1": {
+    "name": "|",
+    "uni": "|",
+    "title": "|",
+    "link": "|"
+
+  }
 }
