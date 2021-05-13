@@ -1,14 +1,15 @@
 {
-    "postersAbout": "Nunc elementum magna ut lorem tempus molestie. Praesent vitae gravida sapien. Vivamus sapien nisi, volutpat ut iaculis interdum, congue ac lacus. Etiam felis sapien, suscipit ultricies tincidunt ut, scelerisque a ante. Vestibulum imperdiet nulla risus, sit amet consectetur eros elementum pretium. Proin eleifend quam augue, non facilisis urna scelerisque in. Praesent vitae lacus felis. Suspendisse potenti. Maecenas at nisl tellus. Proin eu posuere neque. Suspendisse ac risus vehicula, viverra sem quis, ultricies justo. Duis justo neque, iaculis ut bibendum id, malesuada eu libero. Cras ultrices sapien vel massa sollicitudin vulputate.",
-    "postersLink": "Click here to register to give a talk. Please note you must register for CUMC first.",
-    "tableName": "Name",
-    "tableUni": "University",
-    "tableTitle": "Title",
-    "tableLink": "Link",
-    "Student 1": {
-        "name": "|",
-        "uni": "|",
-        "title": "|",
-        "link": "|"
-    }
+  "postersAbout": "Vous êtes invité à soumettre un poster lors de votre inscription à la conférence. Ces affiches, tout comme les exposés des étudiants, peuvent porter sur n'importe quel sujet lié aux sciences mathématiques. Il peut s'agir d'affiches d'exposition sur un problème ou un sujet particulier, de présentations de projets ou de toute autre chose qui conviendrait mieux à un format d'affiche qu'à un exposé.",
+  "postersLink": "L'inscription pour les posters sera ouverte en même temps que l'inscription à la conférence.",
+  "tableName": " Nom ",
+  "tableUni": "Université",
+  "tableTitle": " Titre ",
+  "tableLink": " Lien ",
+  "Student 1": {
+    "name": "|",
+    "uni": "|",
+    "title": "|",
+    "link": "|"
+
+  }
 }
