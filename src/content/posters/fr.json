@@ -1,10 +1,10 @@
 {
   "postersAbout": "Vous êtes invité à soumettre un poster lors de votre inscription à la conférence. Ces affiches, tout comme les exposés des étudiants, peuvent porter sur n'importe quel sujet lié aux sciences mathématiques. Il peut s'agir d'affiches d'exposition sur un problème ou un sujet particulier, de présentations de projets ou de toute autre chose qui conviendrait mieux à un format d'affiche qu'à un exposé.",
   "postersLink": "L'inscription pour les posters sera ouverte en même temps que l'inscription à la conférence.",
-  "tableName": " Nom ",
+  "tableName": "Nom",
   "tableUni": "Université",
-  "tableTitle": " Titre ",
-  "tableLink": " Lien ",
+  "tableTitle": "Titre",
+  "tableLink": "Lien",
   "Student 1": {
     "name": "|",
     "uni": "|",

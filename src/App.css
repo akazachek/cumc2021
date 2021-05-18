@@ -136,6 +136,7 @@ body {
   top: 0;
   left: 0;
   position: fixed;
+  width: 14vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -653,6 +654,7 @@ regret of 2021, calling it now */
     background: var(--light-purple);
     position: relative;
     height: unset;
+    width: unset;
   }
 
   .eventBar ul {
