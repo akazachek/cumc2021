@@ -2,7 +2,7 @@ import React from "react";
 import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
-import generic from "../../media/generic1.png";
+import generic from "../../media/qgeneric1.png";
 
 function Keynotes() {
   const isMobile = MobileDetector();

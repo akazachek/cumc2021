@@ -2,7 +2,7 @@ import React from "react";
 import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
-import generic from "../../media/generic2.png";
+import generic from "../../media/qgeneric2.png";
 
 function Panel() {
   const isMobile = MobileDetector();
