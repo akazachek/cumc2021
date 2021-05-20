@@ -1,15 +1,14 @@
 {
-  "talksAbout": "Les exposÃ©s des Ã©tudiants sont la base de chaque CUMC. En vous inscrivant Ã  la confÃ©rence, vous Ãªtes invitÃ© Ã  donner une confÃ©rence d'une durÃ©e maximale de 15 minutes sur n'importe quel sujet en mathÃ©matiques, mathÃ©matiques appliquÃ©es, statistiques mathÃ©matiques ou autres sciences mathÃ©matiques. Les exposÃ©s peuvent porter sur la recherche, l'Ã©tude indÃ©pendante ou tout autre sujet que vous souhaitez partager.",
-  "talksLink": "L'inscription aux exposÃ©s sera ouverte en mÃªme temps que l'inscription Ã  la confÃ©rence.",
+  "postersAbout": "Vous êtes encouragé à soumettre une affiche lors de votre inscription à la conférence. Ces affiches, tout comme les exposés des étudiants, peuvent porter sur n'importe quel sujet lié aux sciences mathématiques. Il peut s'agir d'affiches d'exposition sur un problème ou un sujet particulier, de présentations de projets, ou de toute autre information qui serait mieux présentée sous la forme d’une affiche que dans une présentation.",
+  "postersLink": "L'inscription aux affiches sera ouverte en même temps que l'inscription à la conférence.",
   "tableName": "Nom",
-  "tableUni": "UniversitÃ©",
+  "tableUni": "Université",
   "tableTitle": "Titre",
-  "tableLink": " Lien ",
+  "tableLink": "Lien",
   "Student 1": {
     "name": "|",
     "uni": "|",
     "title": "|",
     "link": "|"
-
   }
 }
