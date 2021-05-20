@@ -1,9 +1,9 @@
 {
-  "postersAbout": "Vous êtes encouragé à soumettre une affiche lors de votre inscription à la conférence. Ces affiches, tout comme les exposés des étudiants, peuvent porter sur n'importe quel sujet lié aux sciences mathématiques. Il peut s'agir d'affiches d'exposition sur un problème ou un sujet particulier, de présentations de projets, ou de toute autre information qui serait mieux présentée sous la forme d’une affiche que dans une présentation.",
-  "postersLink": "L'inscription aux affiches sera ouverte en même temps que l'inscription à la conférence.",
+  "talksAbout": "Les exposés des étudiants sont la base de chaque CCÉM. En vous inscrivant à la conférence, vous êtes invité à présenter un exposé d'une durée maximale de 15 minutes sur n'importe quel sujet relevant des mathématiques, des mathématiques appliquées, des statistiques mathématiques ou d'autres sciences mathématiques. Les discussions peuvent porter sur la recherche, une étude indépendante ou tout autre sujet que vous souhaitez partager.",
+  "talksLink": "L'inscription aux exposés sera ouverte en même temps que l'inscription à la conférence.",
   "tableName": "Nom",
   "tableUni": "Université",
-  "tableTitle": "Titre",
+  "tableTitle":"Titre",
   "tableLink": "Lien",
   "Student 1": {
     "name": "|",
@@ -11,4 +11,4 @@
     "title": "|",
     "link": "|"
   }
-}
+ }
