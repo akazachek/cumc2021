@@ -1,13 +1,14 @@
 {
-  "about": "Ã€ propos",
-  "speakers": "Les notes clÃ©s et autres",
-  "students": "Les sessions des Ã©tudiants",
+  "about": "À propos",
+  "speakers": "Conférences principales et plus",
+  "students": "Sessions des étudiants",
   "faq": "FAQ",
   "contact": "Contact",
-  "keynotes": "Les confÃ©rences principales",
+  "keynotes": "Conférences principales",
   "panel": "Panel industriel",
-  "talks": "Les exposÃ©s des Ã©tudiants",
-  "posters": "Affiches d'Ã©tudiants",
+  "talks": "Exposés des étudiants",
+  "posters": "Affiches des étudiants",
   "workshop": "Ateliers",
   "register": "Inscrivez-vous maintenant !"
+
 }
