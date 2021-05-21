@@ -29,7 +29,6 @@ class posters extends Component {
     var postersJSON = this.state.posters;
     var postersArr = [];
     Object.keys(postersJSON).forEach(function (key) {
-      // three-way and operator because i cannot plan ahead
       if (key.charAt(0) === "S") postersArr.push(postersJSON[key]);
     });
     return (
