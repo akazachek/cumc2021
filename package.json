@@ -2,6 +2,7 @@
   "name": "cumc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cumc.math.ca/2020",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",

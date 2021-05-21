@@ -1,6 +1,7 @@
 import React from "react";
 import MobileDetector from "./MobileDetector";
 import NavItem from "./NavItem";
+import { default as year } from "./Year";
 
 function NavBar() {
   var activeNav = "about";
@@ -28,44 +29,56 @@ function NavBar() {
             <ul>
               <NavItem
                 item="about"
-                tolink="/about"
+                tolink={"/" + year + "/about"}
                 click={handleClick}
               ></NavItem>
               <NavItem
                 item="speakers"
-                tolink="/speakers"
+                tolink={"/" + year + "/speakers"}
                 click={handleClick}
               ></NavItem>
               <NavItem
                 item="students"
-                tolink="/students"
+                tolink={"/" + year + "/students"}
                 click={handleClick}
               ></NavItem>
-              <NavItem item="faq" tolink="/faq" click={handleClick}></NavItem>
+              <NavItem
+                item="faq"
+                tolink={"/" + year + "/faq"}
+                click={handleClick}
+              ></NavItem>
               <NavItem
                 item="contact"
-                tolink="/contact"
+                tolink={"/" + year + "/contact"}
                 click={handleClick}
               ></NavItem>
             </ul>
           </div>
         ) : (
           <ul>
-            <NavItem item="about" tolink="/about" click={handleClick}></NavItem>
+            <NavItem
+              item="about"
+              tolink={"/" + year + "/about"}
+              click={handleClick}
+            ></NavItem>
             <NavItem
               item="speakers"
-              tolink="/speakers"
+              tolink={"/" + year + "/speakers"}
               click={handleClick}
             ></NavItem>
             <NavItem
               item="students"
-              tolink="/students"
+              tolink={"/" + year + "/students"}
               click={handleClick}
             ></NavItem>
-            <NavItem item="faq" tolink="/faq" click={handleClick}></NavItem>
+            <NavItem
+              item="faq"
+              tolink={"/" + year + "/faq"}
+              click={handleClick}
+            ></NavItem>
             <NavItem
               item="contact"
-              tolink="/contact"
+              tolink={"/" + year + "/contact"}
               click={handleClick}
             ></NavItem>
           </ul>

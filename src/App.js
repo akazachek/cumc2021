@@ -8,6 +8,7 @@ import {
   Switch
 } from "react-router-dom";
 import React, { Component } from "react";
+import { default as year } from "./components/Year";
 
 // pages in site
 import About from "./pages/About";
@@ -21,7 +22,6 @@ import NavBar from "./components/NavBar";
 import { LocaleContext } from "./components/locale/LocaleContext";
 import LocaleSwitch from "./components/locale/LocaleSwitch";
 import Header from "./components/Header.js";
-import RegisterButton from "./components/registration/RegisterButton";
 
 class App extends Component {
   constructor(props) {
@@ -45,8 +45,8 @@ class App extends Component {
             <div className="fullWidth">
               <Header />
               {/* load default homepage */}
-              <Route exact path="/">
-                <Redirect to="/about" />
+              <Route exact path={"/" + year}>
+                <Redirect to={"/" + year + "/about"} />
               </Route>
               <LocaleContext.Provider value={this.state.locale}>
                 <NavBar />
@@ -60,11 +60,11 @@ class App extends Component {
           <body>
             <LocaleContext.Provider value={this.state.locale}>
               <Switch>
-                <Route path="/about" component={About} />
-                <Route path="/speakers" component={Speakers} />
-                <Route path="/students" component={Students} />
-                <Route path="/faq" component={FAQ} />
-                <Route path="/contact" component={Contact} />
+                <Route path={"/" + year + "/about"} component={About} />
+                <Route path={"/" + year + "/speakers"} component={Speakers} />
+                <Route path={"/" + year + "/students"} component={Students} />
+                <Route path={"/" + year + "/faq"} component={FAQ} />
+                <Route path={"/" + year + "/contact"} component={Contact} />
               </Switch>
               {/* register button is not fully implemented, so we pass a dummy method to bind to */}
               {/* <RegisterButton click={() => true} /> */}

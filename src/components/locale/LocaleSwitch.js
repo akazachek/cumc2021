@@ -21,6 +21,9 @@ class LocaleSwitch extends Component {
     this.props.changeLocale(this.state.locale);
   };
 
+  // there is a bug where switching locale for the first
+  // requires clicking twice -- not sure why that is or how
+  // to fix it
   render() {
     return (
       <button className="localeSwitch" onClick={this.toggle}>
