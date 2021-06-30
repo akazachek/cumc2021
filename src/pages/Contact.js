@@ -113,7 +113,7 @@ function Contact() {
       </div>
       <h3>
         <Translator page="contact" text="contact" />
-        <a className="noStyle colouredLink" href="mailto:cumc@uwo.ca">
+        <a className="noStyle colouredLink" href="mailto:contact@cumc2021.ca">
           cumc@uwo.ca
         </a>
         .

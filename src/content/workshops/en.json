@@ -1,0 +1,13 @@
+{
+    "leanTitle":"Teaching Math to Computers.",
+    "leanHost": "Dr. Apurva Nakade, Northwestern University",
+    "leanAbstract":"Will computers ever be able to understand mathematics? How does one even communicate proofs to a computer? Mathematicians have been able to accomplish this using proof assistants, also called interactive theorem provers. These programming languages allow us to 'code proofs' and verify their correctness. In this interactive workshop, you'll learn how to use a proof assistant called Lean. We'll teach Lean a few basic theorems from mathematical logic. The only prerequisites for this workshop are proof techniques. No coding experiences is required. You don't need to install any special software; all the coding exercises will be online.",
+    "leanLink1":"Lean Projects -",
+    "leanLink2":" Liquid Tensor Experiment -",
+    "leanLink3":" IMO Grand Challenge -",
+    "leanLink4":" Formalizing 100 Theorems",
+    "beamerTitle": "Pre-Conference Beamer Workshop",
+    "beamerHost": "Dr. Emerson Doyle, Huron University College",
+    "beamerAbstract": "Beamer is a LaTeX document class used for creating presentations and slideshows, implementing slide templates, transitions, animations, and so on. Being within the LaTeX ecosystem, Beamer naturally integrates mathematical notation, making it a standard slide-making tool in mathematics, physics, and related fields. This workshop will introduce the basics of Beamer and how to use its default styles, and briefly touch on some of the ways they can be customized. Familiarity with LaTeX will be assumed.",
+    "beamerPreconf": "Please note this workshop will be held a few days before the conference officially begins. Further details will be sent out to registrants."
+}

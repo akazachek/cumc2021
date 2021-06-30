@@ -33,7 +33,7 @@ function About() {
       <div id="bookletLink">
         {/* dummy link until conference booklet is ready */}
         <a href={"#"} className="noStyle colouredLink">
-          <Translator page="about" text="conferenceRegister" />
+          <Translator page="about" text="conferenceBooklet" />
         </a>
       </div>
       <div className="tableHoriz">

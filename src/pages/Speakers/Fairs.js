@@ -2,9 +2,9 @@ import React from "react";
 import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
-import generic from "../../media/qgeneric3.png";
+import grad from "../../media/grad.jpg";
 
-function Workshop() {
+function Fairs() {
   const isMobile = MobileDetector();
   const containerClass =
     "centreVert speaker " + (isMobile ? null : "tableHoriz");
@@ -12,17 +12,16 @@ function Workshop() {
     <div className="centrefold">
       <div className="tableVert">
         <div className={containerClass}>
-          <img src={generic} className="roundedImg" />
+          <img src={grad} className="roundedImg" />
           <div>
             <h2 className="speakerName">
-              <Translator page="workshop" text="workshopHeader" />
+              <Translator page="fairs" text="gradHeader" />
             </h2>
-
             <p style={{ textAlign: "left" }}>
-              <Translator page="workshop" text="workshopInfo" />
+              <Translator page="fairs" text="gradBody" />
             </p>
             <p style={{ textAlign: "left" }}>
-              <Translator page="workshop" text="workshopContact" />
+              <Translator page="fairs" text="gradComing" />
             </p>
           </div>
         </div>
@@ -31,4 +30,4 @@ function Workshop() {
   );
 }
 
-export default Workshop;
+export default Fairs;

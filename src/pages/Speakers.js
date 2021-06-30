@@ -3,8 +3,9 @@ import React, { Component } from "react";
 import EventBar from "../components/EventBar";
 
 import Keynotes from "./Speakers/Keynotes";
-import Panel from "./Speakers/Panel";
-import Workshop from "./Speakers/Workshop";
+import Panels from "./Speakers/Panels";
+import Workshops from "./Speakers/Workshops";
+import Fairs from "./Speakers/Fairs";
 
 class Speakers extends Component {
   constructor(props) {
@@ -36,10 +37,12 @@ class Speakers extends Component {
     switch (page) {
       case "keynotes":
         return <Keynotes />;
-      case "panel":
-        return <Panel />;
-      case "workshop":
-        return <Workshop />;
+      case "panels":
+        return <Panels />;
+      case "workshops":
+        return <Workshops />;
+      case "fairs":
+        return <Fairs />;
     }
   }
 
@@ -49,7 +52,7 @@ class Speakers extends Component {
         <EventBar
           initial="keynotes"
           click={this.handleClick}
-          events={["keynotes", "panel", "workshop"]}
+          events={["keynotes", "panels", "workshops", "fairs"]}
         ></EventBar>
         {this.renderPage(this.state.activeEvent)}
       </div>

@@ -1,13 +1,14 @@
 {
     "about": "About",
-    "speakers": "Keynotes & More",
+    "speakers": "Main Events",
     "students": "Student Sessions",
     "faq": "FAQ",
     "contact": "Contact",
-    "keynotes": "Keynote Lectures",
-    "panel": "Industry Panel",
+    "keynotes": "Keynotes",
+    "panels": "Panels",
+    "fairs": "Fairs",
     "talks": "Student Talks",
     "posters": "Student Posters",
-    "workshop": "Workshops",
+    "workshops": "Workshops",
     "register": "Register now!"
 }

@@ -640,10 +640,11 @@ regret of 2021, calling it now */
 
   .eventDiv {
     display: inline-flex;
-    width: 30vw;
+    width: 50%;
   }
 
   .eventDiv li {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -658,6 +659,7 @@ regret of 2021, calling it now */
   }
 
   .eventBar ul {
+    justify-content: center;
     padding: 0;
     width: 100%;
     margin-bottom: 0;

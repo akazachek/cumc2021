@@ -1,5 +1,19 @@
 {
-  "keynotesSoon": "Keynotes Announced Soon.",
-  "keynotesComing": "Keynote lectures are talks delivered by prominent Canadian mathematicians or industry figures. They can range from introductions to areas of mathematics, explaining how a particular problem or conjecture was resolved, or the role mathematics plays in specific applications. They are a hightlight of the conference.",
-  "keynoteInquiries": "If you know someone who may be interested in delivering a keynote lecture, or are interested in giving one yourself, feel free to contact us."
+  "keynote1Name": "Dr. Joel Kamnitzer",
+  "keynote1Inst": "University of Toronto",
+  "keynote2Name": "Dr. Luke Postle",
+  "keynote2Inst": "University of Waterloo",
+  "keynote3Name": "Dr. Malabika Pramanik",
+  "keynote3Inst": "University of British Columbia",
+  "keynote4Name": "Dr. Jeremy Quastel",
+  "keynote4Inst": "University of Toronto",
+  "keynote5Name": "Dr. Sujatha Ramdorai",
+  "keynote5Inst": "University of British Columbia",
+  "keynote6Name": "Dr. Gord Sinnamon",
+  "keynote6Inst": "University of Western Ontario",
+  "keynote7Name": "Dr. Stephanie van Willigenburg",
+  "keynote7Inst": "University of British Columbia",
+  "keynote8Name": "Dr. Francesca Vidotto",
+  "keynote8Inst": "University of Western Ontario",
+  "keynotesComing": "Keynote lecture titles and abstracts will be coming soon."
 }
