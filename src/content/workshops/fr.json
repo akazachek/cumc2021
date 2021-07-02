@@ -1,5 +1,13 @@
 {
-  "workshopHeader": "Ateliers en cours de planification.",
-  "workshopInfo": "Les ateliers sont des événements interactifs, axés sur le développement de compétences ou la résolution de problèmes spécifiques. Ils permettent de dialoguer avec les conférenciers, ainsi qu'avec les autres participants.",
-  "workshopContact": "Si vous avez des idées d’atelier, ou si vous souhaitez participer à leur organisation, nous serions ravis d’en parler avec vous."
+    "leanTitle":"Enseigner les mathématiques aux ordinateurs.",
+    "leanHost": "Dr. Apurva Nakade, Université Northwestern",
+    "leanAbstract":"Les ordinateurs seront-ils un jour capables de comprendre les mathématiques ? Comment peut-on ne serait-ce que communiquer des preuves à un ordinateur ? Les mathématiciens y sont parvenus en utilisant des assistants de preuve, également appelés prouveurs de théorèmes interactifs. Ces langages de programmation nous permettent de « coder des preuves » et de vérifier leur exactitude. Dans cet atelier interactif, vous apprendrez à utiliser un assistant de preuve appelé Lean. Nous allons enseigner à Lean quelques théorèmes de base de la logique mathématique. Les seules conditions préalables à cet atelier sont les techniques de preuve. Aucune expérience de codage n'est requise. Vous n'avez pas besoin d'installer de logiciel particulier ; tous les exercices de codage seront en ligne.",
+    "leanLink1":"Projets Lean -",
+    "leanLink2":" Expérience du tenseur liquide- ",
+    "leanLink3":" Le grand défi de l'IMO - ",
+    "leanLink4":" Formalisation de 100 théorèmes",
+    "beamerTitle": "Atelier pré-conférence Beamer",
+    "beamerHost": "Dr. Emerson Doyle, Collège universitaire Huron",
+    "beamerAbstract": "Beamer est une classe de document LaTeX utilisée pour créer des présentations et des diaporamas, grâce à des modèles de diapositives, des transitions, des animations, et autres. Composante de l'écosystème LaTeX, Beamer intègre naturellement les notations mathématiques, ce qui en fait un outil standard de création de diapositives en mathématiques, en physique et dans les domaines connexes. Cet atelier présentera les bases de Beamer, comment utiliser ses styles par défaut, et abordera brièvement certaines façons de les personnaliser. Une connaissance de LaTeX est requise.",
+    "beamerPreconf": "Veuillez noter que cet atelier aura lieu quelques jours avant le début officiel de la conférence. Des détails supplémentaires seront envoyés aux inscrits."
 }
