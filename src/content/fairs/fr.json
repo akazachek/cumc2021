@@ -1,14 +1,5 @@
 {
-  "postersAbout": "Vous êtes encouragé à soumettre une affiche lors de votre inscription à la conférence. Ces affiches, tout comme les exposés des étudiants, peuvent porter sur n'importe quel sujet lié aux sciences mathématiques. Il peut s'agir d'affiches d'exposition sur un problème ou un sujet particulier, de présentations de projets, ou de toute autre information qui serait mieux présentée sous la forme d’une affiche que dans une présentation.",
-  "postersLink": "L'inscription aux affiches sera ouverte en même temps que l'inscription à la conférence.",
-  "tableName": "Nom",
-  "tableUni": "Université",
-  "tableTitle": "Titre",
-  "tableLink": "Lien",
-  "Student 1": {
-    "name": "|",
-    "uni": "|",
-    "title": "|",
-    "link": "|"
-  }
+  "gradHeader": "Salon des études supérieures.",
+  "gradBody": "Plusieurs universités au Canada offrent de solides programmes d'études supérieures en mathématiques, en informatique et dans les disciplines connexes. Chaque école a ses propres points forts et objectifs, et beaucoup ont des programmes ou des aspects uniques qui les différencient des autres. Le salon des études supérieures vous permet d'explorer vos possibilités et de parler avec des représentants officiels des programmes d'études supérieures.",
+  "gradComing": "La liste complète des écoles participantes sera bientôt disponible."
 }
