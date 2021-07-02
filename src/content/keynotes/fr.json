@@ -1,5 +1,19 @@
 {
-  "keynotesSoon": "Les conférences principales seront bientôt annoncées.",
-  "keynotesComing": "Les conférences principales sont des présentations données par d'éminents mathématiciens ou personnalités de l'industrie du Canada. Il peut s'agir d'introductions à des domaines des mathématiques, de l'explication de la résolution d'un problème ou d'une conjecture, ou du rôle joué par les mathématiques dans des applications spécifiques. Il s'agit d’un moment fort de la conférence.",
-  "keynoteInquiries": "Si vous connaissez quelqu'un qui pourrait être intéressé par la présentation d'une conférence principale, ou si vous êtes intéressé à en donner une vous-même, n'hésitez pas à nous contacter."
+  "keynote1Name": "Dr. Joel Kamnitzer",
+  "keynote1Inst": "Université de Toronto",
+  "keynote2Name": "Dr. Luke Postle",
+  "keynote2Inst": "Université de Waterloo",
+  "keynote3Name": "Dr. Malabika Pramanik",
+  "keynote3Inst": "Université de la Colombie-Britannique",
+  "keynote4Name": "Dr. Jeremy Quastel",
+  "keynote4Inst": "Université de Toronto",
+  "keynote5Name": "Dr. Sujatha Ramdorai",
+  "keynote5Inst": "Université de la Colombie-Britannique",
+  "keynote6Name": "Dr. Gord Sinnamon",
+  "keynote6Inst": "Université de Western Ontario",
+  "keynote7Name": "Dr. Stephanie van Willigenburg",
+  "keynote7Inst": "Université de la Colombie-Britannique",
+  "keynote8Name": "Dr. Francesca Vidotto",
+  "keynote8Inst": "Université de Western Ontario",
+  "keynotesComing": "Les titres des conférences principales et leurs résumés seront bientôt disponibles."
 }
