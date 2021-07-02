@@ -22,6 +22,7 @@ import NavBar from "./components/NavBar";
 import { LocaleContext } from "./components/locale/LocaleContext";
 import LocaleSwitch from "./components/locale/LocaleSwitch";
 import Header from "./components/Header.js";
+import RegisterButton from "./components/registration/RegisterButton";
 
 class App extends Component {
   constructor(props) {
@@ -66,8 +67,15 @@ class App extends Component {
                 <Route path={"/" + year + "/faq"} component={FAQ} />
                 <Route path={"/" + year + "/contact"} component={Contact} />
               </Switch>
-              {/* register button is not fully implemented, so we pass a dummy method to bind to */}
-              {/* <RegisterButton click={() => true} /> */}
+              <RegisterButton
+                click={() =>
+                  window.open(
+                    "https://portal.cms.math.ca/mrm/events/EventDetailBridge.aspx?eid=47",
+                    "_blank",
+                    "resizable=yes"
+                  )
+                }
+              />
             </LocaleContext.Provider>
           </body>
         </div>

@@ -41,7 +41,10 @@ class Talks extends Component {
               <Translator page="talks" text="talksAbout" />
             </p>
           </div>
-          <a className="colouredLink noStyle" href="#">
+          <a
+            className="colouredLink noStyle"
+            href="https://uwo.eu.qualtrics.com/jfe/form/SV_9XiLCFf1OFb3TE2"
+          >
             <Translator page="talks" text="talksLink" />
           </a>
           <table>
