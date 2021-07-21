@@ -10,7 +10,7 @@ import studc from "../media/studc.png";
 function About() {
   const isMobile = MobileDetector();
   return (
-    <div className="centrefold">
+    <div id="dummyID" className="centrefold">
       <div className={isMobile ? "" : "tableHoriz centreVert"}>
         {/* overwritting size */}
         <img

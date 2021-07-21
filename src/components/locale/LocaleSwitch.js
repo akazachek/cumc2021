@@ -26,7 +26,7 @@ class LocaleSwitch extends Component {
   // to fix it
   render() {
     return (
-      <button className="localeSwitch" onClick={this.toggle}>
+      <button id="btn" className="localeSwitch" onClick={this.toggle}>
         en / fr
       </button>
     );
