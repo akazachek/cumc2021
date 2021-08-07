@@ -42,6 +42,7 @@ class posters extends Component {
           <a
             className="colouredLink noStyle"
             href="https://uwo.eu.qualtrics.com/jfe/form/SV_cHog2HfADu43zCu"
+            target="_blank"
           >
             <Translator page="posters" text="postersLink" />
           </a>

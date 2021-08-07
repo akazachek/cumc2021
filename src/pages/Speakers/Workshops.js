@@ -4,6 +4,7 @@ import MobileDetector from "../../components/MobileDetector";
 
 import lean from "../../media/lean.png";
 import beamer from "../../media/beamer.png";
+import beamerTeX from "../../media/beamer.tex";
 
 function Workshops() {
   const isMobile = MobileDetector();
@@ -24,9 +25,14 @@ function Workshops() {
             <p style={{ textAlign: "left" }}>
               <Translator page="workshops" text="beamerAbstract" />
             </p>
-            <p style={{ textAlign: "left" }}>
-              <Translator page="workshops" text="beamerPreconf" />
-            </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href={beamerTeX}
+              target="_blank"
+            >
+              <Translator page="workshops" text="beamerTemplate" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -45,6 +51,7 @@ function Workshops() {
               style={{ textAlign: "left", fontSize: "20px" }}
               className="noStyle colouredLink"
               href="https://leanprover-community.github.io/lean_projects.html"
+              target="_blank"
             >
               <Translator page="workshops" text="leanLink1" />
             </a>
@@ -52,6 +59,7 @@ function Workshops() {
               style={{ textAlign: "left", fontSize: "20px" }}
               className="noStyle colouredLink"
               href="https://xenaproject.wordpress.com/2021/06/05/half-a-year-of-the-liquid-tensor-experiment-amazing-developments/"
+              target="_blank"
             >
               <Translator page="workshops" text="leanLink2" />
             </a>
@@ -59,6 +67,7 @@ function Workshops() {
               style={{ textAlign: "left", fontSize: "20px" }}
               className="noStyle colouredLink"
               href="https://imo-grand-challenge.github.io/"
+              target="_blank"
             >
               <Translator page="workshops" text="leanLink3" />
             </a>
@@ -66,6 +75,7 @@ function Workshops() {
               style={{ textAlign: "left", fontSize: "20px" }}
               className="noStyle colouredLink"
               href="https://www.cs.ru.nl/~freek/100/"
+              target="_blank"
             >
               <Translator page="workshops" text="leanLink4" />
             </a>

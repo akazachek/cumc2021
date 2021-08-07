@@ -44,6 +44,7 @@ class Talks extends Component {
           <a
             className="colouredLink noStyle"
             href="https://uwo.eu.qualtrics.com/jfe/form/SV_9XiLCFf1OFb3TE2"
+            target="_blank"
           >
             <Translator page="talks" text="talksLink" />
           </a>

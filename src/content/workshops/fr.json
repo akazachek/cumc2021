@@ -9,5 +9,6 @@
     "beamerTitle": "Atelier pré-conférence Beamer.",
     "beamerHost": "Dr. Emerson Doyle, Collège universitaire Huron",
     "beamerAbstract": "Beamer est une classe de document LaTeX utilisée pour créer des présentations et des diaporamas, grâce à des modèles de diapositives, des transitions, des animations, et autres. Composante de l'écosystème LaTeX, Beamer intègre naturellement les notations mathématiques, ce qui en fait un outil standard de création de diapositives en mathématiques, en physique et dans les domaines connexes. Cet atelier présentera les bases de Beamer, comment utiliser ses styles par défaut, et abordera brièvement certaines façons de les personnaliser. Une connaissance de LaTeX est requise.",
-    "beamerPreconf": "Veuillez noter que cet atelier aura lieu quelques jours avant le début officiel de la conférence. Des détails supplémentaires seront envoyés aux inscrits."
+    "beamerPreconf": "Veuillez noter que cet atelier aura lieu quelques jours avant le début officiel de la conférence. Des détails supplémentaires seront envoyés aux inscrits.",
+    "beamerTemplate": "Télécharger le modèle ici"
 }

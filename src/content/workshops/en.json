@@ -9,5 +9,6 @@
     "beamerTitle": "Beamer Workshop (Pre-Conference).",
     "beamerHost": "Dr. Emerson Doyle, Huron University College",
     "beamerAbstract": "Beamer is a LaTeX document class used for creating presentations and slideshows, implementing slide templates, transitions, animations, and so on. Being within the LaTeX ecosystem, Beamer naturally integrates mathematical notation, making it a standard slide-making tool in mathematics, physics, and related fields. This workshop will introduce the basics of Beamer and how to use its default styles, and briefly touch on some of the ways they can be customized. Familiarity with LaTeX will be assumed.",
-    "beamerPreconf": "Please note this workshop will be held a few days before the conference officially begins. Further details will be sent out to registrants."
+    "beamerPreconf": "Please note this workshop will be held a few days before the conference officially begins. Further details will be sent out to registrants.",
+    "beamerTemplate": "Download Template Here"
 }

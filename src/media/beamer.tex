@@ -1,0 +1,816 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%		CUMC 2021 
+%%		Beamer Workshop
+%%		August 7th, 2021
+%%		Emerson Doyle, Huron University College
+%%		Contact the author at:  edoyle9@uwo.ca
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%		Presentation Template---distributed at workshop
+%%		Please feel free to utilize, modify, and distribute this template as you like
+%%		
+%%
+%%		NOTE: to compile this file immediately, you'll have to scroll down and comment out any \includegraphics commands
+%%		Alternatively you can add six jpeg files to the folder where you put this file, named image1.jpeg, image2.jpeg, etc.
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%		We need to start by telling TeX that we're making a presentation. 
+
+\documentclass{beamer}	
+
+%%		Note the Beamer class should automagically load a bunch of packages and style files, including amsmath, amsfonts, amssymb, amstext, 
+%%		graphicx, geometry, xcolor, hyperref, and url. If you need something extra like fitch or tikz, invoke them here.	
+				
+
+%% 		Next we have a bunch of commands that format the presentation to a visual style I personally prefer.
+
+\usetheme{Darmstadt}						%my favourite theme---list of other default options included with Beamer class at 
+										%https://www.overleaf.com/learn/latex/Beamer#Reference_guide
+										%if you comment out \usetheme{} altogether, Beamer defaults to a very plain look
+											
+%\usecolortheme{}							%this can be used to change the default colours of a particular theme
+										%again, see https://www.overleaf.com/learn/latex/Beamer#Reference_guide for details
+										%I like the default colours of Darmstadt, so I just leave this out
+											
+\setbeamertemplate{navigation symbols}{}			%I don't find the navigation symbols to be useful. comment this out to include the symbols on all slides
+
+%\setbeamertemplate{footline}[frame number]		%uncomment this to include an indication of the Current/Total Slide # at the bottom right of each slide
+										%I prefer to just use a theme (like Darmstadt) that builds this into the look somehow
+											
+%%		Beamer defaults to what I think are odd choices for fonts, so the next few commands clean that up a little
+										
+\usepackage{lmodern}						%makes Beamer use a modified Computer Modern font, which ``fixes'' certain odd character choices
+\usefonttheme{professionalfonts}				%makes Beamer display mathematics in a more typical LaTeX way (serif, italic style)
+\usefonttheme{structurebold}					%makes Beamer display titles and other ``structural'' text in a bolded typeface
+
+\renewcommand{\qedsymbol}{$\blacksquare$}		%Beamer defaults to an open square to indicate the end of a proof, which is just... just wrong.
+
+
+%%		That's it for the preamble! Now the info to create the Title Page for your talk. This won't actually print anything until you create a frame and use the 
+%%		\titlepage command, but it puts the information on-deck in the right way. You can comment out any of these fields if you don't want them.
+
+
+\title{presentation title}						%this can take a parameter for a short title which appears in various places depending
+										%on the theme chosen:	\title[short title]{presentation title}
+\subtitle{presentation subtitle}
+\institute{your institutional affiliation}
+\author{your name}
+\date{the date}								%write in a date, or if compiled on the day-of just use:	\date{\today}
+
+%%		For the \institute argument, I like to include a bit more information, including my email address. \texttt makes the email address appear
+%%		in a typewriter font to distinguish it well.
+
+%\institute{Your Institution\\Your Department\\ \href{mailto:youremail@domain.ca}{\texttt youremail@domain.ca}}
+
+
+%%		Finally ready to actually create some content! As usual for a LaTeX document, we need to tell TeX to begin/end the document.
+%%		After that, Beamer presentations are divided into Frames. A frame is kind of like one full slide of content (one ``page''), although we can
+%%		use overlays to ``build-up'' content in a frame piece by piece when displayed as a pdf. 
+
+%%		The first Frame should almost always be your title page. 
+
+\begin{document}
+
+
+\begin{frame}[plain]							%the [plain] parameter tells Beamer to not display static structural elements from the current theme
+										%being used, which would just clutter the slide. You can delete it if you'd like
+	\titlepage
+	
+\end{frame}
+
+
+%%		Some people like to include a Table of Contents next as a way to walk the audience through the structure of their talk. This necessitates having 
+%%		good Section/Sub-Section structure, which makes for an organized talk!
+
+\begin{frame}[plain]
+
+	\tableofcontents							%the [pausesections] argument here builds each section out one at a time on the slide if you want to
+										%emphasize each section in your summary a little more
+	
+\end{frame}
+
+
+
+%%		Below are a few basic content Frames that give you an idea of how to organize your slides and overall presentation using Beamer. 
+%%		Obviously everything will be dependent upon your particular talk and style preferences. Mix-and-match as necessary!
+%%		You can consult the massive Beamer Users Guide at http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf for details.
+
+
+\section{Frame Basics}						%this will appear in the Table of Contents
+\subsection{Simple Frames \& Formatting}			%so will this
+
+\begin{frame}{Frame Title: Our First Frame}		%the Frame Title argument is optional
+	
+	Beamer will lay out your text in a generally pleasant way if you just type some basic stuff on a slide.
+	
+	\bigskip								%alternatively use \smallskip or \medskip
+	
+	Leaving a space between text elements will not generate space on the slide (as is typical of \LaTeX). So using the \alert{skip} commands or \alert{vfill} generates pleasant spacing as necessary.
+	
+	%\bigskip
+	\vfill									%in Beamer this doesn't put what's below right at the bottom, rather it pads in a more modest way
+										%I think Beamer cuts the page up into thirds, but I'm not entirely confident about that 
+	
+	As you can see the \alert{alert} command is unique to Beamer, allowing you to highlight a text element in a more substantial way than an \emph{emphasize} or \textbf{bold} would. Perhaps better for presentations.
+	
+\end{frame}
+
+
+
+\begin{frame}{Using Columns for Text}
+
+	You can also create \alert{columns} of various sizes to help organize your text, as demonstrated below:
+	
+	\vfill
+	
+	\begin{columns}
+		\column{0.5\textwidth}				%you can give absolute lengths in cm or inches, columns can also be different widths
+		This is the first column, with a width specified as half of the overall text-width. 
+		
+		\medskip
+		
+		It appears on the left side of the page.
+		
+		\column{0.5\textwidth}
+		This is the second column, with the same width.
+		
+		\medskip
+		
+		It appears on the right side of the page.
+	\end{columns}
+
+	\vfill
+
+	You can see that there's no need to partition the entire Frame into columns if you don't want to.
+
+\end{frame}
+
+
+
+\begin{frame}{Better Columns \& Centering}
+
+	That last slide was super-ugly however. We can make it look nicer by shrinking the column size a bit (so text boundaries are inside the boundaries of normal text) and aligning the columns at the \alert{top}:
+	
+	\vfill
+	
+	\begin{columns}[t]						%the [t] parameter on each column is doing the work here, we also have [b], [c]
+		\column{0.4\textwidth}							
+		Now the text of each column will start in the same place. 
+		
+		\medskip
+		
+		No matter whether the columns are the same length.
+		
+		\column{0.4\textwidth}
+		This is the second column, with the same width.
+		
+		\medskip
+		
+		It appears on the right side of the page.
+	\end{columns}
+
+	\vfill
+	
+	\begin{center}
+		There! Much better.\\ Note the \alert{center} environment also works in Beamer.
+	\end{center}
+
+\end{frame}
+
+
+\subsection{List Environments}
+
+\begin{frame}{Lists}
+
+	All the usual \LaTeX\ environments for lists work:		%the \ after the command here creates a single space
+	
+	\vfill
+	
+	\begin{columns}[c]							%here centering the columns vertically with [c] looks nice
+		\column{0.3\textwidth}
+		\textbf{Itemize:}
+		\begin{itemize}
+			\item First item
+			\item Second item
+			\item Third item
+		\end{itemize}
+		
+		\column{0.3\textwidth}
+		\textbf{Enumerate:}
+		\begin{enumerate}
+			\item First enum
+			\item Second enum
+			\item Third enum
+		\end{enumerate}
+		
+		\column{0.3\textwidth}
+		\textbf{With custom parameters:}
+		\begin{enumerate}						%we can create custom labels in \itemize too
+			\item[(i)] First item
+			\item[(ii)] Second item
+			\item[(iii)] Third item
+		\end{enumerate}
+	\end{columns}
+	
+	\vfill
+	
+	Different themes will create different styles of bullets.
+	
+\end{frame}
+
+
+\begin{frame}{The Description Environment}
+	
+	A really handy environment when you want to list a bunch of definitions or terms is \alert{Description}:
+	
+	\begin{description}
+		\item[Batman:] a superhero
+		\item[Hela:] a supervillain
+		\item[Aquaman:] a joke
+	\end{description}
+	
+\end{frame}
+
+
+\subsection{Font Sizes \& Content Quantity}
+
+\begin{frame}{Font Sizing}
+
+	We can use relative sizes for fonts just like in regular \LaTeX:
+	
+	\begin{columns}[c]
+	\column{0.25\textwidth}
+	\begin{itemize}
+		\item {\tiny tiny}							
+		\item {\scriptsize scriptsize}
+		\item {\footnotesize footnotesize}
+		\item {\small small}
+		\item {\normalsize normalsize}
+		\item {\large large}
+		\item {\Large Large}
+		\item {\LARGE LARGE}
+		\item {\huge huge}
+		\item {\Huge Huge}
+	\end{itemize}
+	
+	\column{0.6\textwidth}
+	I'd shy away from exploiting font sizes to try to fit more content in one Frame, as that's bad presentation design. 
+	
+	\medskip
+	
+	Rather, try to think ahead and include only the most relevant points on the slide as \alert{prompts} for you to elaborate upon during the presentation.
+	
+	\medskip
+	
+	Even with proofs---leave out rote calculations, and try to break the argument into conceptual steps that each get their own slide(s).
+	
+	{\tiny (This is clearly too much text for one slide!)}
+	\end{columns}
+
+\end{frame}
+
+
+\section{Blocks \& Mathematics}
+\subsection{Working with Blocks}
+
+
+\begin{frame}[plain]							%if you want to remind your audience of where they are in the presentation use a TOC frame again
+	\tableofcontents[current]					%the [current] parameter greys out the sections before and after the current place in the presentation
+\end{frame}
+
+
+\begin{frame}{Using the Block Environment}
+	
+	\begin{block}{A Basic Block}
+		This is a basic block. Its appearance will depend heavily upon the theme and colortheme you chose.
+	\end{block}
+	
+	\begin{block}{}							%here we've left the title argument empty
+		This is a block without a title.
+	\end{block}
+	
+	\vfill
+	
+	\begin{columns}[c]
+	\column{0.4\textwidth}
+	You can use \alert{blocks} in columns. 
+	
+	\medskip
+	
+	And you can include lists inside of blocks.
+	
+	\medskip
+	
+	Or pretty much anything else you want too.
+	
+	\column{0.4\textwidth}
+	\begin{block}{Block in Column}
+		\begin{itemize}
+			\item This
+			\item is a
+			\item list
+		\end{itemize}
+	\end{block}
+	\end{columns}
+	
+\end{frame}
+
+
+\begin{frame}{Other Types of Blocks}
+
+	\begin{alertblock}{An Alert Block}				%again, title is optional---you can leave it empty
+		Again, the precise colour and style of this is determined by the theme and colortheme you've chosen.	
+	\end{alertblock}
+	
+	\begin{definition}
+		A definition block doesn't take a title argument. I think it will iterate TeX's internal definition numbering for the file as well.
+	\end{definition}
+	
+	\begin{example}
+		An example of an example block. Again, no title argument.
+	\end{example}
+	
+\end{frame}
+
+
+\subsection{Mathematical Environments}
+
+
+\begin{frame}{Mathematical Blocks}
+	
+	\begin{theorem}[Theorem Name]
+		You still need to enclose mathematical symbols in `\$' as with normal \LaTeX. Like this: $a^2 + b^2 = c^2$
+	\end{theorem}
+	
+	\begin{corollary}[Corollary Name]
+		But notice that Beamer puts everything inside these boxes in italics. \alert{usefonttheme\{professionalfonts\}} from the preamble makes everything inside math-mode look like normal \LaTeX.
+	\end{corollary}
+	
+	\begin{proof}
+		The proof block includes a tombstone at the end. Recall we modified it to a black square in the preamble, because it's much more definitive and true-looking than a simple open rectangle.
+	\end{proof}
+	
+\end{frame}
+
+
+\begin{frame}{An Example!}
+
+	\begin{theorem}
+		There is no largest prime number.
+	\end{theorem}
+	
+	\begin{proof}
+		\begin{enumerate}
+			\item Suppose $p$ were the largest prime number.
+			\item Let $q$ be the product of the first $p$ numbers.
+			\item Then $q + 1$ is not divisible by any of them.
+			\item But $q + 1$ is greater than $1$, thus divisible by some prime
+					number not in the first $p$ numbers.\qedhere	
+												%we use \qedhere as otherwise the proof block puts it on its own line, wasting space
+		\end{enumerate}
+	\end{proof}
+	
+	The proof used \textit{reductio ad absurdum}.		%This example is adapted from section 3 of the Beamer User Guide
+											%http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+			
+\end{frame}
+
+
+\begin{frame}{Typical Mathematical Environments}
+	
+	Instead of presenting all of this using the special Beamer blocks, you can just use regular mathematical environments from \LaTeX.
+	
+	\begin{equation}						%{equation*} suppresses showing the equation number on the right
+		E = mc^2
+	\end{equation}
+	
+	\[ We're in math-mode now!\]
+	
+	\bigskip
+	
+	Single dollar signs around some text allow for in-line math-mode as normal: $\pi = 3$.
+	
+\end{frame}
+
+
+\begin{frame}{Some Rough Algebra, Aligned!}
+
+	\begin{theorem}
+		For all natural numbers $n\geq5$, $2^n>n^2$
+	\end{theorem}
+	
+	\vfill
+	
+	\footnotesize{
+	{\bf Basis Clause:} When $n=5$, we have that $2^5 = 32 > 25 = 5^2$. 
+	
+	\medskip
+		
+	{\bf Inductive Step:} For each $n\geq5$ up to some arbitrary $n$, if $2^n > n^2$, then $2^{n+1} > (n+1)^2$. So we have\dots
+		\begin{align*}						%again, the * here suppresses the enumeration of the lines on the right
+			2^{n+1} &= 2(2^n)\\
+			&> 2n^2\qquad\qquad\qquad (\textrm{by inductive hypothesis})\\
+			&= n^2 + n^2\\
+			&\geq n^2 + 5n\qquad\qquad (\textrm{Since } n\geq5)\\
+			&= n^2 + 2n + 3n\\
+			&> n^2 + 2n + 1 = (n + 1)^2\qed
+		\end{align*}}						
+										%this is too much rote algebra for one slide, as is obvious by me needing to shrink the font size
+
+\end{frame}
+
+\subsection{Including Code}
+
+\begin{frame}[fragile]{The Semiverbatim Environment}
+
+	If you need to include code in your presentation, you can use the \alert{semiverbatim} environment:
+	
+	\begin{semiverbatim}
+		\\begin\{frame\}[fragile]\{The Semiverbatim Environment\}			
+		If you need to include code in your presentation, you can 	
+		use the \\alert\{semiverbatim\} environment:
+		\\begin\{verbatim\}
+		\\end\{verbatim\}
+			This is rather a self-referential frame.
+		\\end\{frame\}
+	\end{semiverbatim}
+	
+	This is rather a self-referential frame.
+	
+	\medskip
+	
+	Remember to add a backlash in front of all $\backslash$, \{, \} characters while in the \alert{semiverbatim} environment, so \TeX\ knows to print them rather than interpret them.
+
+\end{frame}
+
+
+\section{Working with Objects}
+\subsection{Graphics \& Figures}
+
+
+\begin{frame}								%no title on this frame---that's okay!
+
+	Images can be inserted as normal, using \alert{includegraphics} with all the usual parameters:
+	
+	{\centering							%Beamer handles image centering a little funny. the Center environment adds whitespace both before
+	\includegraphics[scale=0.5]{image1}\par		%and after the image, which is annoying. the \centering command here does not, but be careful to
+	}									%enclose the content to be centered in braces and force a paragraph break at the end with \par
+	
+	It's easiest to just make sure that the image file is in the same folder as the presentation file.
+	
+
+\end{frame}
+
+
+
+\begin{frame}
+
+	\begin{columns}
+	\column{0.5\textwidth}
+		We can also include images in a columns environment to create more typical slide layouts.
+		
+	\column{0.5\textwidth}
+	
+	\centering										%I didn't include the braces here because nothing comes after the image, so I don't need to
+	\includegraphics[width=\columnwidth]{image2}			%``end'' the centering for the rest of the frame
+	\end{columns}
+	
+\end{frame}
+
+
+
+\begin{frame}[plain]									%adding the [plain] parameter just gives us a full-page image if your image is big enough!
+												%otherwise just scale it appropriately
+	\centering
+	\includegraphics[height=\textheight]{image3}
+	
+\end{frame}
+
+
+
+\begin{frame}{Figures are Fun!}
+
+	\begin{columns}
+	\column{0.5\textwidth}
+		The \alert{Figure} environment works just the same as well.
+		
+	\column{0.5\textwidth}
+	
+	\centering
+	\begin{figure}
+		\includegraphics[width=\columnwidth]{image4}
+		\caption{Ironic that \alert{\textit{Bat}}man can't fly.}
+	\end{figure}
+	
+	\end{columns}
+	
+\end{frame}
+
+
+\subsection{The Tabular Environment}
+
+
+\begin{frame}{Inserting Tables}
+	
+	Again, the \alert{Tabular} environment works just like it does in \LaTeX:
+	
+	\begin{center}
+	\begin{tabular}{r | c | c | c |}
+		& Powerpoint & Keynote & Beamer \\
+		\hline\hline
+		Snazzy Looking & \textcolor{red}{$\times$}  & \textcolor{teal}{\checkmark} & \textcolor{teal}{\checkmark} \\
+		\hline
+		Handles Math & \textcolor{teal}{\checkmark} & \textcolor{red}{$\times$} & \textcolor{teal}{\checkmark} \\
+		\hline
+		Does What You Expect & \textcolor{red}{$\times$} & \textcolor{teal}{\checkmark} & \textcolor{teal}{\checkmark} \\
+		\hline
+		Easy to Use & \textcolor{red}{$\times$} & \textcolor{teal}{\checkmark} & \textcolor{teal}{\checkmark} \\
+		\hline
+		Makes Work More True & \textcolor{red}{$\times$} & \textcolor{red}{$\times$} & \textcolor{teal}{\checkmark}\\
+		\hline
+	\end{tabular}
+	\end{center}
+	
+	So does \textcolor{magenta}{textcolor}, obviously!
+	
+\end{frame}
+
+
+\section{Overlays \& Transitions}
+\subsection{Stepping Through Your Content}
+
+
+\begin{frame}{The Pause Command}
+
+	For pretty much any reveal\dots\ \pause you can use the \alert{pause} command! \pause
+	
+	\vfill
+	
+	It also works within environments, like \alert{Itemize:} \pause
+	
+	\begin{itemize}
+		\item First item \pause
+		\item Second item \pause
+		\item Third item
+	\end{itemize}
+	
+	\vfill
+	
+	Beamer takes a single frame and break it up into multiple ``slides'' when it outputs to pdf. So you're just scrolling through the pdf deck as normal, but the items will ``build'' on the frame.
+	
+\end{frame}
+
+
+
+\begin{frame}{The Pause Command}
+
+	It works just as well for images: \pause
+	
+	\begin{center}
+	\includegraphics[scale=0.25]{image5}
+	\end{center}	\pause
+	
+	The ``bubbles'' up top in a theme like Darmstadt won't advance until we get to the next Frame.
+
+\end{frame}
+
+
+\subsection{More Advanced Methods}
+
+
+\begin{frame}{Other Ways to Accomplish the Same Thing}
+
+	If we have a list, we can include the parameter $[<+->]$ when we begin the listing environment: 
+
+	\begin{itemize}[<+->]
+		\item First item
+		\item Second item
+		\item Third item
+	\end{itemize}
+	
+	\vfill
+	
+	{\scriptsize (take a look at the code to see how it works!)}
+
+\end{frame}
+
+
+\begin{frame}{Other Ways to Accomplish the Same Thing II}
+
+	We can also get more fine-grained with these parameters on individual items:
+
+	\begin{itemize}
+		\item<2,4> First item (shows only on second and fourth steps)
+		\item<1-> Second item (shows throughout frame)
+		\item<3-4> Third item (shows on third and fourth step)
+		\item<4-> Fourth item (appears on fourth step, remains)
+		\item<5-> Fifth item (shows on last step)
+	\end{itemize}
+	
+	\vfill
+	
+	{\scriptsize (take a look at the code to see how it works!)}
+
+\end{frame}
+
+
+\begin{frame}{Other Ways to Accomplish the Same Thing III}
+
+	Using the \alert{setbeamercovered} command with the argument \alert{transparent} lets us see the other items greyed-out:
+	
+	\setbeamercovered{transparent}
+
+	\begin{itemize}
+		\item<2,4> First item (shows only on second and fourth steps)
+		\item<1-> Second item (shows throughout frame)
+		\item<3-4> Third item (shows on third and fourth step)
+		\item<4-> Fourth item (appears on fourth step, remains)
+		\item<5-> Fifth item (shows on last step)
+	\end{itemize} 
+	
+	\setbeamercovered{invisible}
+	
+	\uncover<6>{Make sure to set \alert{setbeamercovered} back to \alert{invisible} unless you want all overlays in the whole presentation to work like this.}
+	
+	\vfill
+	
+	{\scriptsize (take a look at the code to see how it works!)}
+
+\end{frame}
+
+
+\begin{frame}{The General Uncover Environment}
+	If you want to step reveals of various elements in complex ways like this, use the \alert{uncover} environment along with the parameters we just covered:
+	
+	\vfill
+	
+	\begin{columns}[c]
+	\column{0.5\textwidth}
+	
+		\uncover<4->{Tricksy text above appears last!}
+	
+		\bigskip
+	
+		\uncover<3->{This text is set to appear second, even though it's on the left.}
+	
+	\column{0.5\textwidth}
+	
+	\centering
+	\begin{figure}
+		\uncover<2->{
+		\includegraphics[width=\columnwidth]{image6}
+		\caption{Image appears first}
+		}
+	\end{figure}
+	
+	\end{columns}
+	
+	\vfill
+	
+	{\scriptsize (take a look at the code to see how it works!)}
+	
+\end{frame}
+
+
+\begin{frame}{Overlays for Other Effects}
+
+	We can \textcolor<2,5->{magenta}{change the colour} of text for one or more ``steps'' of a frame as we like
+	
+	\bigskip
+	
+	\uncover<3->{And similarly with other \textbf<4>{formatting commands.}}
+	
+	\bigskip
+	
+	\uncover<5->{In that case I \textrm<6->{nested} overlay parameters!} \uncover<7->{(and in this one!)}
+	
+	\vfill
+	
+	{\scriptsize (take a look at the code to see how it works!)}
+
+\end{frame}
+
+
+\subsection{Slide Transitions}
+
+\begin{frame}{Animation in a PDF!}
+
+\transglitter				%the transition command needs to be within the frame to which the effect is applied
+						%list of transition effects is in section 14.3 of http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+
+	\begin{alertblock}{}
+	\centering
+		\textcolor{red}{Wasn't that \textbf{FANCY!!}}
+	\end{alertblock}
+	
+	\bigskip
+	
+	Although you can do transition effects in Beamer, I highly recommend against it except under special circumstances. \pause
+	
+	\begin{itemize}
+		\item Distracting for the audience, taking away from your content.
+		\item Can look ``flashy'' and so unprofessional.
+		\item Doesn't seem to work consistently in every pdf viewer (works in Acrobat Reader).
+		\item Need to be in Full Screen mode.
+	\end{itemize}
+
+\end{frame}
+
+
+\section{Talk Advice}
+
+
+\begin{frame}{Timing is Everything}
+
+	The best advice I can give you is\dots \pause
+	
+	\begin{alertblock}{}
+		\centering{\textcolor{red}{Begin preparing early, and \textbf{PRACTICE!!}}\par
+		}
+	\end{alertblock} 
+	 
+	\bigskip \pause
+	
+	Although it's possible to use one file for both your paper and your talk, I didn't explain how to do it because I think it's a \alert{terrible} idea.
+	
+	\medskip
+	
+	Analogously, your paper \alert{isn't} a presentation---effective presentations need consideration independent of the origin paper.
+	
+	\bigskip \pause
+	
+	Consider the \textbf{amount of time} you have, distill the paper down into the key idea/contribution/observation to convey in that time. Then outline into sections and sub-sections, then fill-in the details.
+	
+\end{frame}
+
+
+\begin{frame}
+
+	Even for densely mathematical talks, think \textbf{conceptually} about what needs to be conveyed, and recognize that the audience might not all be specialists!
+	
+	\bigskip
+	
+	Be aware of how much information fits in a Frame, and how much detail the audience can absorb when they're also trying to build an overall conceptual picture of your work at the same time.
+	
+	\bigskip
+	
+	Use the question period to fill in details if asked! \pause
+	
+	\begin{block}{Last Tip!}
+		Have some ``extra'' slides at the end of the presentation (after the Thanks slide) with the details that you can show if a question comes up. It'll make you look like an ultra-prepared superstar pro.
+	\end{block}
+
+\end{frame}
+
+
+\begin{frame}							%I always like to thank my audience for attending---they took time from their busy lives to give me their
+									%attention, consideration, and feedback. Be genuinely grateful for that!
+	\centering
+	{\Huge \bf Thanks!}
+	
+\end{frame}
+
+
+
+\begin{frame}{Example of an Extra Details Slide!}		%there doesn't seem to be a way to hide these slides from the navigation ``bubbles'' along the top.
+										%if anyone finds a way, I'd love to know about it!
+
+	Since this is pure extra, I'd say feel free to make the text a little smaller as needed, and to cram stuff on here.
+	
+	\bigskip
+	
+	This is also a good place to include a \textbf{References} frame. References work just like they do in \LaTeX\ (using the \alert{cite} command and \alert{bibliography} environment on a frame) which is why I didn't cover them in this template or workshop. 
+
+\end{frame}
+
+
+\end{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%		If something isn't working out COMPILE AGAIN! (You have to compile THREE TIMES for TOC and Navigation to work!)
+%%
+%%		Beamer can get confused. Don't be afraid to Trash your AUX files and recompile fresh.
+%%
+%%		I've linked this several times already, but here's the full Beamer User Guide:
+%%		http://tug.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+%%
+%%		Hopefully this was helpful! As I said above, feel free to pull from this, distribute it, or modify it as you like.
+%%		And GOOD LUCK with your own presentations!!
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
