@@ -38,13 +38,17 @@ function Panels() {
             <Translator page="panels" text="industryBody" />
           </p>
           <p style={{ textAlign: "left" }}>
-            <Translator page="panels" text="industryHein" />
+            <Translator page="panels" text="industryJulia" />
           </p>
           <p style={{ textAlign: "left" }}>
             <Translator page="panels" text="industryMadhu" />
           </p>
           <p style={{ textAlign: "left" }}>
-            <Translator page="panels" text="industryJulia" />
+            <Translator page="panels" text="industryHein" />
+          </p>
+          <p style={{ textAlign: "left" }}>
+            {" "}
+            <Translator page="panels" text="industryJohn" />
           </p>
         </div>
       </div>

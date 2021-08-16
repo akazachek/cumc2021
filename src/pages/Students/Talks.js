@@ -41,13 +41,13 @@ class Talks extends Component {
               <Translator page="talks" text="talksAbout" />
             </p>
           </div>
-          <a
+          {/*<a
             className="colouredLink noStyle"
             href="https://uwo.eu.qualtrics.com/jfe/form/SV_9XiLCFf1OFb3TE2"
             target="_blank"
           >
             <Translator page="talks" text="talksLink" />
-          </a>
+          </a> */}
           <table>
             <tr>
               <th>
@@ -67,9 +67,27 @@ class Talks extends Component {
             {/* will not update on context changes, need to fix */}
             {talksArr.map((talk) => (
               <tr>
-                <td>{talk.name}</td>
-                <td>{talk.uni}</td>
-                <td style={{ textAlign: "left" }}>{talk.title}</td>
+                <td
+                  style={{
+                    textAlign: "right"
+                  }}
+                >
+                  {talk.name}
+                </td>
+                <td
+                  style={{
+                    textAlign: "left"
+                  }}
+                >
+                  {talk.uni}
+                </td>
+                <td
+                  style={{
+                    textAlign: "left"
+                  }}
+                >
+                  {talk.title}
+                </td>
                 <td dangerouslySetInnerHTML={{ __html: talk.link }}></td>
               </tr>
             ))}

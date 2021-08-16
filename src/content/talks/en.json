@@ -6,9 +6,339 @@
     "tableTitle": "Title",
     "tableLink": "Link",
     "Student 1": {
-        "name": "|",
-        "uni": "|",
-        "title": "|",
-        "link": "|"
+        "name": "Antonio Acuaviva",
+        "uni": "Complutense University of Madrid",
+        "title": "Quantum Walks on Graphs: Perfect State Transfer and Periodicity",
+        "link": ""
+    },
+    "Student 2": {
+        "name": "Karan Bains",
+        "uni": "University of British Columbia",
+        "title": "Introduction to minimal surfaces and submanifolds and some results for conformal automorphisms of the unit ball",
+        "link": ""
+    },
+    "Student 3": {
+        "name": "Mathew Cater Benavides",
+        "uni": "University of Toronto",
+        "title": "Paul Lévy’s Construction of Brownian Motion",
+        "link": ""
+    },
+    "Student 4": {
+        "name": "Kieran Bhaskara",
+        "uni": "Dalhousie University",
+        "title": "A Tale of Two Triangles",
+        "link": ""
+    },
+    "Student 5": {
+        "name": "Veer Prakash Bhatia",
+        "uni": "University of British Columbia",
+        "title": "The Birthday Paradox",
+        "link": ""
+    },
+    "Student 6": {
+        "name": "Geneviève Bistodeau-Gagnon",
+        "uni": "Université de Montréal",
+        "title": "Integrated data driven approaches for understanding immunological data",
+        "link": ""
+    },
+    "Student 7": {
+        "name": "Kunal Chawla",
+        "uni": "University of Toronto",
+        "title": "Cursed Fractions and Hyperbolic Geometry",
+        "link": ""
+    },
+    "Student 8": {
+        "name": "Ethan Choi",
+        "uni": "University of Toronto",
+        "title": "Various Methods for Optimization",
+        "link": ""
+    },
+    "Student 9": {
+        "name": "Jiawei Chen",
+        "uni": "University of Toronto",
+        "title": "Rapid testing for COVID-19 and SIQR model",
+        "link": ""
+    },
+    "Student 10": {
+        "name": "Alex Clow",
+        "uni": "St. Francis Xavier University",
+        "title": "Simple Colouring Oriented Graphs",
+        "link": ""
+    },
+    "Student 11": {
+        "name": "Patrick Cyr",
+        "uni": "University of Ottawa",
+        "title": "Distorted Projections: Do you see what I see? From the Celestial Sphere to Tessellating Triangles via the Schwarzian Derivative",
+        "link": ""
+    },
+    "Student 12": {
+        "name": "Tuan Hiep Do, Josué Kurke, & Andrew Luo",
+        "uni": "University of Waterloo",
+        "title": "An Introduction to Vinogradov’s Mean Value Theorem",
+        "link": ""
+    },
+    "Student 13": {
+        "name": "Sylvie Dornez",
+        "uni": "Université de Saint Boniface",
+        "title": "De la géométrie euclidienne aux géométries non euclidiennes",
+        "link": ""
+    },
+    "Student 14": {
+        "name": "Ryan Edwards",
+        "uni": "McMaster University",
+        "title": "Introducing... Determinantal Facet Ideals! (With a Connection to Kazhdan-Lusztig Ideals)",
+        "link": ""
+    },
+    "Student 15": {
+        "name": "Daniel Girvitz",
+        "uni": "University of Calgary",
+        "title": "Cross-frequency coupling studies of intracranial EEG data of epilepsy patients using time-frequency distributions",
+        "link": ""
+    },
+    "Student 16": {
+        "name": "Lewis Glabush",
+        "uni": "Western University",
+        "title": "Spectral Graph Theory: Structure & Characteristic Polynomial",
+        "link": ""
+    },
+    "Student 17": {
+        "name": "Brendon James",
+        "uni": "Concordia University",
+        "title": "Number Theory meets Machine Learning",
+        "link": ""
+    },
+    "Student 18": {
+        "name": "Seraphim Jarov",
+        "uni": "University of British Columbia",
+        "title": "An introduction to Elliptic curves and variants of the Lang-Trotter conjecture",
+        "link": ""
+    },
+    "Student 19": {
+        "name": "Songlin Jin",
+        "uni": "University of British Columbia",
+        "title": "Framelets on Manifold and Graphs with Applications",
+        "link": ""
+    },
+    "Student 20": {
+        "name": "Alex Kazachek",
+        "uni": "Western University",
+        "title": "A mathematical definition of entanglement and its measurement",
+        "link": ""
+    },
+    "Student 21": {
+        "name": "Mehrdad Kazemi",
+        "uni": "York University",
+        "title": "Determinants of COVID-19 vaccine acceptance in 143 countries around the world",
+        "link": ""
+    },
+    "Student 22": {
+        "name": "Will Kimoto",
+        "uni": "Queen's University",
+        "title": "Baire’s Category Theorem And The Banach-Steinhaus Theorem",
+        "link": ""
+    },
+    "Student 23": {
+        "name": "Charlotte Lavoie-Bel",
+        "uni": "Université Laval",
+        "title": "Symmetries appearing in Mandelbrot-like sets for some polynomial families",
+        "link": ""
+    },
+    "Student 24": {
+        "name": "Xinze Li",
+        "uni": "University of Toronto",
+        "title": "Introduction on the min-max construction of minimal surfaces",
+        "link": ""
+    },
+    "Student 25": {
+        "name": "Maki Lu",
+        "uni": "University of Toronto",
+        "title": "An Introduction to the Poincare Upper Half Plane and Modular Forms",
+        "link": ""
+    },
+    "Student 26": {
+        "name": "Christopher Frank Stephan Maligec",
+        "uni": "Western University",
+        "title": "A Graph-Theoretical Representation of the Natural Numbers",
+        "link": ""
+    },
+    "Student 27": {
+        "name": "Julia McClellan",
+        "uni": "University of Toronto",
+        "title": "Reflecting on Our Conceptions of Proofs While Solving a Sudoku",
+        "link": ""
+    },
+    "Student 28": {
+        "name": "Julie Midroni",
+        "uni": "University of Toronto",
+        "title": "Information Theory and its Relevance to Biological Signaling Pathways",
+        "link": ""
+    },
+    "Student 29": {
+        "name": "Blanche Mongeon",
+        "uni": "Université de Montréal",
+        "title": "A Mathematical Model of Brain Tumour Growth",
+        "link": ""
+    },
+    "Student 30": {
+        "name": "Yuveshen Mooroogen",
+        "uni": "University of Toronto",
+        "title": "Hinges and Snowballs",
+        "link": ""
+    },
+    "Student 31": {
+        "name": "Xavier Mootoo & Vedarth Vyas",
+        "uni": "York University",
+        "title": "Examining the Grobner Basis of a Symmetric Function Ideal Within the Context of Catalan Numbers",
+        "link": ""
+    },
+    "Student 32": {
+        "name": "James Munday",
+        "uni": "Dalhousie University",
+        "title": "Exceptional Gegenbauer Polynomials and Confluent Darboux Transformations",
+        "link": ""
+    },
+    "Student 33": {
+        "name": "Lexi Nash",
+        "uni": "Concordia University of Edmonton",
+        "title": "Enumerating Positions of Distance Games",
+        "link": ""
+    },
+    "Student 34": {
+        "name": "Rakan Omar",
+        "uni": "York University",
+        "title": "Influence Centrality",
+        "link": ""
+    },
+    "Student 35": {
+        "name": "Johnna Parenteau",
+        "uni": "University of Regina",
+        "title": "Zero Forcing Sets and Forts in Trees",
+        "link": ""
+    },
+    "Student 36": {
+        "name": "Danil Platonov",
+        "uni": "University of British Columbia",
+        "title": "Probability Concentration Inequalities",
+        "link": ""
+    },
+    "Student 37": {
+        "name": "Uttara Sheila Rajagopalan",
+        "uni": "University of Toronto",
+        "title": "Billiards, Illumination and the Irrationality Of It All",
+        "link": ""
+    },
+    "Student 38": {
+        "name": "Achintya Raya",
+        "uni": "University of Alberta",
+        "title": "Existence of an Equilibrium in Mixed Networks of Coordinators and Anti-coordinators",
+        "link": ""
+    },
+    "Student 39": {
+        "name": "Tiadora Ruza",
+        "uni": "University of Waterloo",
+        "title": "Limit Theorems for Permutations with Restricted Cycles: An Experimental Journey",
+        "link": ""
+    },
+    "Student 40": {
+        "name": "Gustavo Cicchini Santos",
+        "uni": "Ryerson University",
+        "title": "Understanding Non-Equilibrium Steady States Adopting Methods From Quantum Field Theory",
+        "link": ""
+    },
+    "Student 41": {
+        "name": "Vinicius Santos",
+        "uni": "University of British Columbia",
+        "title": "How to Solve a Cryptarithm",
+        "link": ""
+    },
+    "Student 42": {
+        "name": "Mahima Siali",
+        "uni": "Western University",
+        "title": "Dissipative-Dispersive Wave Equations",
+        "link": ""
+    },
+    "Student 43": {
+        "name": "Devam Sisodraker",
+        "uni": "University of British Columbia",
+        "title": "PageRank: The Billion Dollar Algorithm",
+        "link": ""
+    },
+    "Student 44": {
+        "name": "Kiera Sobolewski",
+        "uni": "University of Calgary",
+        "title": "Reciprocity Laws: Uncovering the Secrets Behind Primes",
+        "link": ""
+    },
+    "Student 45": {
+        "name": "Amie Su",
+        "uni": "University of British Columbia",
+        "title": "The Mathematics of Tiling a Soccer Ball",
+        "link": ""
+    },
+    "Student 46": {
+        "name": "Leo Vanciu",
+        "uni": "Marianopolis College",
+        "title": "Bayesian Disease Mapping of COVID-19 Cases Across the Boroughs of Montreal",
+        "link": ""
+    },
+    "Student 47": {
+        "name": "Amar Venga",
+        "uni": "Western University",
+        "title": "From Field Theory to Algebraic Number Theory",
+        "link": ""
+    },
+    "Student 48": {
+        "name": "William Verreault",
+        "uni": "Université Laval",
+        "title": "Plank theorems and their applications",
+        "link": ""
+    },
+    "Student 49": {
+        "name": "Crystal Wai",
+        "uni": "Mount Royal University",
+        "title": "Spatiotemporal transmission dynamics of COVID-19 using mathematical models",
+        "link": ""
+    },
+    "Student 50": {
+        "name": "Qiu Shi Wang",
+        "uni": "McGill University",
+        "title": "On the center of the cohomology algebra of a closed orientable 3-manifold",
+        "link": ""
+    },
+    "Student 51": {
+        "name": "Victor Wang",
+        "uni": "University of British Columbia",
+        "title": "Extended chromatic symmetric functions and equaliity of ribbon Schur functions",
+        "link": ""
+    },
+    "Student 52": {
+        "name": "Curtis Wilson",
+        "uni": "Queen's University",
+        "title": "Determining Galois Group Containment with Invariants",
+        "link": ""
+    },
+    "Student 53": {
+        "name": "Shilong Yu",
+        "uni": "University of Toronto",
+        "title": "Field and Ring of Fractions",
+        "link": ""
+    },
+    "Student 54": {
+        "name": "Sina Babaei Zadeh",
+        "uni": "University of Toronto",
+        "title": "Building galaxies from the bottom up: how uniquely does galaxy assembly determine their present day properties?",
+        "link": ""
+    },
+    "Student 55": {
+        "name": "Ashley Zhang",
+        "uni": "University of Toronto",
+        "title": "Introduction to Bayesian Statistics",
+        "link": ""
+    },
+    "Student 56": {
+        "name": "Xinran Zhou",
+        "uni": "University of British Columbia",
+        "title": "How to solve a/(b + c) + b/(a + c) + c/(a + b) = 4",
+        "link": ""
     }
 }

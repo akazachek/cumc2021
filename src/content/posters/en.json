@@ -6,9 +6,27 @@
     "tableTitle": "Title",
     "tableLink": "Link",
     "Student 1": {
-        "name": "|",
-        "uni": "|",
-        "title": "|",
-        "link": "|"
+        "name": "Cody William Antal",
+        "uni": "University of Regina",
+        "title": "Erdős-Ko-Rado Theorems For Transitive Groups",
+        "link": ""
+    },
+    "Student 2": {
+        "name": "Alexander Khadra",
+        "uni": "University of British Columbia",
+        "title": "Arithmetic Statistics on Elliptic Curves",
+        "link": ""
+    },
+    "Student 3": {
+        "name": "Edwin Lu",
+        "uni": "College of William and Mary",
+        "title": "Multi-criteria approach to assessing predicted improvement in COVID-19 cases",
+        "link": ""
+    },
+    "Student 4": {
+        "name": "Christina Vu",
+        "uni": "York University",
+        "title": "Stochastic Modelling for COVID-19 Transmission Among Visitors of Canada’s Wonderland",
+        "link": ""
     }
 }

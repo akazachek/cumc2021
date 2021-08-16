@@ -333,6 +333,10 @@ body {
   align-items: center;
 }
 
+table {
+  width: 90%;
+}
+
 .tableHoriz {
   display: flex;
   flex-direction: row;
@@ -677,6 +681,7 @@ regret of 2021, calling it now */
 
   table {
     table-layout: fixed;
+    width: 100%;
   }
 
   td {

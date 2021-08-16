@@ -39,13 +39,13 @@ class posters extends Component {
               <Translator page="posters" text="postersAbout" />
             </p>
           </div>
-          <a
+          {/*<a
             className="colouredLink noStyle"
             href="https://uwo.eu.qualtrics.com/jfe/form/SV_cHog2HfADu43zCu"
             target="_blank"
           >
             <Translator page="posters" text="postersLink" />
-          </a>
+          </a>*/}
           <table>
             <tr>
               <th>
@@ -65,8 +65,20 @@ class posters extends Component {
             {/* will not update on context changes, need to fix */}
             {postersArr.map((poster) => (
               <tr>
-                <td>{poster.name}</td>
-                <td>{poster.uni}</td>
+                <td
+                  style={{
+                    textAlign: "right"
+                  }}
+                >
+                  {poster.name}
+                </td>
+                <td
+                  style={{
+                    textAlign: "left"
+                  }}
+                >
+                  {poster.uni}
+                </td>
                 <td style={{ textAlign: "left" }}>{poster.title}</td>
                 <td dangerouslySetInnerHTML={{ __html: poster.link }}></td>
               </tr>
