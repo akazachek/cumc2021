@@ -5,6 +5,8 @@ import MobileDetector from "../../components/MobileDetector";
 import lean from "../../media/lean.png";
 import beamer from "../../media/beamer.png";
 import beamerTeX from "../../media/beamer.tex";
+import leanSlides from "../../media/Nakade.pdf";
+import leanZIP from "../../media/lean.zip";
 
 function Workshops() {
   const isMobile = MobileDetector();
@@ -47,6 +49,22 @@ function Workshops() {
             <p style={{ textAlign: "left" }}>
               <Translator page="workshops" text="leanAbstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href={leanSlides}
+              target="_blank"
+            >
+              <Translator page="workshops" text="leanSlides" />
+            </a>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href={leanZIP}
+              target="_blank"
+            >
+              <Translator page="workshops" text="leanFiles" />
+            </a>
             <a
               style={{ textAlign: "left", fontSize: "20px" }}
               className="noStyle colouredLink"

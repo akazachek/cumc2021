@@ -7,6 +7,7 @@ import postle from "../../media/Postle.jpg";
 import pramanik from "../../media/Pramanik.png";
 import quastel from "../../media/Quastel.jpg";
 import ramdorai from "../../media/Ramdorai.jpeg";
+import ramdoraiVid from "../../media/Ramdorai.mp4";
 import sinnamon from "../../media/Sinnamon.jpg";
 import willigenburg from "../../media/van Willigenburg.jpg";
 import vidotto from "../../media/Vidotto.jpg";
@@ -40,6 +41,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote1Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1gu_tkNWZAaUv-hsbj73QmAK9DMtPyqBJ/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -57,6 +66,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote2Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1fEZe4y_FCFN0fLVB9O_JhDvSEnznhTOv/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -74,6 +91,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote3Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1Ftc4Cxax9q3VeaykUHCCz62KxRc4pg4z/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -91,6 +116,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote4Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1hZ_N7RcqA6fghAMg3ohfoqNOjaqgNJJM/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -108,6 +141,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote5Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href={ramdoraiVid}
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -125,6 +166,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote6Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1oj5yCxzvVoNOEiE7jQ-U_HMH6QUW7CTA/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -142,6 +191,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote7Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1JY9zD_-kgZrLuVtxhioFRoFpJA2ST0n_/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
         <div className={containerClass}>
@@ -159,6 +216,14 @@ function Keynotes() {
             <p style={{ textAlign: "left" }}>
               <Translator page="keynotes" text="keynote8Abstract" />
             </p>
+            <a
+              style={{ textAlign: "left", fontSize: "20px" }}
+              className="noStyle colouredLink"
+              href="https://drive.google.com/file/d/1ERkYW9yR1Xkfn0n-fMAkhw8j7yrtg5FH/view?usp=sharing"
+              target="_blank"
+            >
+              <Translator page="keynotes" text="recording" />
+            </a>
           </div>
         </div>
       </div>

@@ -469,6 +469,13 @@ table {
   padding-right: 4vw;
 }
 
+.gradSchool {
+  width: 30%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  height: 30%;
+}
+
 /* || MOBILE */
 
 /* not making the mobile website first is my biggest
@@ -692,5 +699,10 @@ regret of 2021, calling it now */
   .committeeMember {
     width: 40vw;
     margin-left: 5vw;
+  }
+
+  .gradSchool {
+    width: 70%;
+    padding-left: 15%;
   }
 }

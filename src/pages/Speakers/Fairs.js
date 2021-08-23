@@ -3,11 +3,15 @@ import Translator from "../../components/locale/Translator";
 import MobileDetector from "../../components/MobileDetector";
 
 import grad from "../../media/grad.jpg";
+import western from "../../media/western.png";
+import waterloo from "../../media/waterloo.png";
+import alberta from "../../media/alberta.png";
 
 function Fairs() {
   const isMobile = MobileDetector();
   const containerClass =
     "centreVert speaker " + (isMobile ? null : "tableHoriz");
+  const gradClass = isMobile ? "tableVert" : "tableHoriz";
   return (
     <div className="centrefold">
       <div className="tableVert">
@@ -20,9 +24,11 @@ function Fairs() {
             <p style={{ textAlign: "left" }}>
               <Translator page="fairs" text="gradBody" />
             </p>
-            <p style={{ textAlign: "left" }}>
-              <Translator page="fairs" text="gradComing" />
-            </p>
+            <div className={gradClass}>
+              <img src={alberta} className="gradSchool" />
+              <img src={waterloo} className="gradSchool" />
+              <img src={western} className="gradSchool" />
+            </div>
           </div>
         </div>
       </div>
